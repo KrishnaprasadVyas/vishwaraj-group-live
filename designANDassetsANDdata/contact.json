@@ -1,0 +1,111 @@
+{
+  "companyName": "Vishwaraj Polychem Private Limited",
+  "addresses": [
+    {
+      "type": "headquarters",
+      "fullAddress": "Gate No. 199, Behind Jyotiba Mandir, Jyotiba Nager MIDC, Talawade, Bhosari, Pune-411039, Maharashtra, India",
+      "line1": "Gate No. 199, Behind Jyotiba Mandir",
+      "line2": "Jyotiba Nager MIDC, Talawade, Bhosari",
+      "city": "Pune",
+      "state": "Maharashtra",
+      "pincode": "411039",
+      "country": "India"
+    },
+    {
+      "type": "associated_entity",
+  "companyName": "Shreeniwas Casttech Industries",
+      "location": "Chakan, Pune, Maharashtra, India",
+      "note": "Associated entity for die casting components manufacturing"
+    }
+  ],
+  "phoneNumbers": [
+    {
+      "number": "+91 9921053399",
+      "formatted": "+91-9921053399",
+      "type": "primary",
+      "countryCode": "+91"
+    },
+    {
+      "number": "+91 8999884602",
+      "type": "secondary",
+      "countryCode": "+91"
+    },
+    {
+      "number": "+91-8983188989",
+      "type": "associated_entity",
+      "entityName": "Shreeniwas Casttech Industries",
+      "countryCode": "+91"
+    }
+  ],
+  "emails": [
+    {
+      "email": "vishwaraj99@rediffmail.com",
+      "type": "primary"
+    },
+    {
+      "email": "info@vishwarajgroup.com",
+      "type": "general_inquiry"
+    },
+    {
+      "email": "vishwarajppl18@gmail.com",
+      "type": "alternate"
+    },
+    {
+      "email": "sales@vishwaraj.com",
+      "type": "sales"
+    },
+    {
+      "email": "shreeniwascasttech@gmail.com",
+      "type": "associated_entity",
+      "entityName": "Shreeniwas Casttech Industries"
+    }
+  ],
+  "website": "https://www.vishwarajgroup.com/",
+  "socialMedia": [],
+  "workingHours": {
+    "note": "Working hours not specified on website"
+  },
+  "contactForm": {
+    "fields": [
+      {
+        "name": "fullName",
+        "type": "text",
+        "placeholder": "Enter Full Name",
+        "required": true
+      },
+      {
+        "name": "email",
+        "type": "email",
+        "placeholder": "Enter Email Address",
+        "required": true
+      },
+      {
+        "name": "phone",
+        "type": "tel",
+        "placeholder": "Enter Phone Number",
+        "maxLength": 15,
+        "required": true
+      },
+      {
+        "name": "message",
+        "type": "textarea",
+        "placeholder": "Enter Your Message",
+        "required": true
+      }
+    ],
+    "captcha": {
+      "enabled": true,
+      "type": "human verification"
+    },
+    "fileUpload": {
+      "enabled": true,
+      "label": "Upload File"
+    }
+  },
+  "downloadOptions": [
+    {
+      "type": "catalogue",
+      "action": "Fill Form & Download Our Catalogue"
+    }
+  ]
+}

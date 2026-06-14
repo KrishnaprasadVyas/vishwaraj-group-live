@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vishwaraj Polychem | Protective Packaging Engineered for Modern Manufacturing</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                "on-tertiary-fixed": "#001d32",
+                "on-secondary-fixed": "#1c1b1b",
+                "on-primary": "#552100",
+                "surface-dim": "#131313",
+                "on-surface-variant": "#e0c0b1",
+                "on-primary-container": "#582200",
+                "secondary-fixed-dim": "#c8c6c5",
+                "primary-container": "#f97316",
+                "outline": "#a78b7d",
+                "surface-container": "#1f1f1f",
+                "on-secondary-container": "#bab8b7",
+                "error": "#ffb4ab",
+                "tertiary": "#93ccff",
+                "surface-variant": "#353535",
+                "on-secondary-fixed-variant": "#474646",
+                "primary-fixed-dim": "#ffb690",
+                "inverse-primary": "#9d4300",
+                "surface-container-low": "#1b1b1b",
+                "on-tertiary-container": "#003554",
+                "on-background": "#e2e2e2",
+                "surface-container-lowest": "#0e0e0e",
+                "inverse-on-surface": "#303030",
+                "tertiary-fixed-dim": "#93ccff",
+                "surface": "#131313",
+                "primary": "#ffb690",
+                "error-container": "#93000a",
+                "background": "#131313",
+                "surface-container-highest": "#353535",
+                "secondary": "#c8c6c5",
+                "on-error-container": "#ffdad6",
+                "outline-variant": "#584237",
+                "on-error": "#690005",
+                "tertiary-container": "#00a2f4",
+                "on-surface": "#e2e2e2",
+                "surface-bright": "#393939",
+                "on-tertiary": "#003351",
+                "secondary-fixed": "#e5e2e1",
+                "inverse-surface": "#e2e2e2",
+                "surface-container-high": "#2a2a2a",
+                "secondary-container": "#4a4949",
+                "on-primary-fixed-variant": "#783200",
+                "primary-fixed": "#ffdbca",
+                "on-tertiary-fixed-variant": "#004b74",
+                "on-primary-fixed": "#341100",
+                "tertiary-fixed": "#cde5ff",
+                "surface-tint": "#ffb690",
+                "on-secondary": "#313030"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "container-max": "1440px",
+                      "section-padding": "160px",
+                      "gutter": "32px",
+                      "stack-sm": "8px",
+                      "stack-md": "24px",
+                      "stack-lg": "48px"
+              },
+              "fontFamily": {
+                      "headline-lg-mobile": [
+                              "Hanken Grotesk"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "headline-lg": [
+                              "Hanken Grotesk"
+                      ],
+                      "label-caps": [
+                              "Geist"
+                      ],
+                      "display-2xl": [
+                              "Hanken Grotesk"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "headline-md": [
+                              "Hanken Grotesk"
+                      ]
+              },
+              "fontSize": {
+                      "headline-lg-mobile": [
+                              "40px",
+                              {
+                                      "lineHeight": "44px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "32px",
+                                      "letterSpacing": "0.01em",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg": [
+                              "64px",
+                              {
+                                      "lineHeight": "72px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-2xl": [
+                              "120px",
+                              {
+                                      "lineHeight": "110px",
+                                      "letterSpacing": "-0.04em",
+                                      "fontWeight": "800"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;600&amp;family=Hanken+Grotesk:wght@400;600;700;800&amp;family=Inter:wght@400;500;800;900&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            background-color: #000;
+            color: theme('colors.on-surface');
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .glow-accent {
+            box-shadow: 0 0 40px rgba(249, 115, 22, 0.1);
+        }
+
+        .text-gradient {
+            background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.5) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Animations */
+        @keyframes slowZoom {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.1); }
+        }
+        
+        .bg-zoom-effect {
+            animation: slowZoom 20s ease-in-out infinite alternate;
+        }
+
+        @keyframes scrollHorizontal {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        .scrolling-wrapper {
+            display: flex;
+            width: fit-content;
+            animation: scrollHorizontal 30s linear infinite;
+        }
+
+        /* Scroll reveals */
+        .reveal-up {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        
+        .reveal-up.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .reveal-right {
+            opacity: 0;
+            transform: translateX(-40px);
+            transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        
+        .reveal-right.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .reveal-left {
+            opacity: 0;
+            transform: translateX(40px);
+            transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        
+        .reveal-left.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .reveal-scale {
+            opacity: 0;
+            transform: scale(0.9);
+            transition: all 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .reveal-scale.active {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        /* Massive Hero Typography */
+        .massive-text {
+            font-size: 8rem;
+            line-height: 0.9;
+            letter-spacing: -0.05em;
+            font-weight: 900;
+            font-family: 'Inter', sans-serif;
+            text-transform: uppercase;
+        }
+
+        @media (min-width: 1024px) {
+            .massive-text {
+                font-size: 11rem;
+            }
+        }
+        
+        /* Sticky Layout */
+        .sticky-container {
+            position: sticky;
+            top: 20vh;
+        }
+
+        /* Industry Vertical Hover */
+        .industry-item {
+            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        
+        .industry-item:hover {
+            color: #F97316;
+            padding-left: 2rem;
+        }
+        
+        .industry-bg {
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+        
+        .industry-item:hover + .industry-bg {
+            opacity: 0.4;
+        }
+
+        /* Masonry Grid */
+        .masonry-grid {
+            column-count: 1;
+            column-gap: 2rem;
+        }
+        @media (min-width: 768px) {
+            .masonry-grid {
+                column-count: 2;
+            }
+        }
+        @media (min-width: 1024px) {
+            .masonry-grid {
+                column-count: 3;
+            }
+        }
+        .masonry-item {
+            break-inside: avoid;
+            margin-bottom: 2rem;
+        }
+
+        /* Dropdown Menu */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 0.5rem;
+            margin-top: 0.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .dropdown-content a {
+            color: rgba(255, 255, 255, 0.8);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .dropdown-content a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body class="antialiased font-body-md text-body-md selection:bg-primary-container selection:text-black">
+<!-- Global WebGL Background Shader -->
+<div class="fixed inset-0 z-[-1] pointer-events-none opacity-40 mix-blend-screen">
+</div>
+<!-- TopNavBar (Shared Component) -->
+<nav class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-12 py-4 bg-white/5 dark:bg-white/5 rounded-full mt-6 mx-auto w-[90%] max-w-7xl backdrop-blur-xl border-t border-white/10 shadow-[0_0_40_rgba(0,0,0,0.5)]">
+<div class="flex items-center">
+<img alt="Vishwaraj Polychem Logo" class="h-8" src="https://lh3.googleusercontent.com/aida/AP1WRLvVyaBuuaga8-wJVPXRAF8VYYtu_Fttouxhqc2u8XDt-wDFK7RJ4HSIVmzGWtyhKrQz1nNq09XhNgcpQXsRpJFQ1jMZtAs32tTQ02YNI4-5xElZ4ZHhtfpV27psysNQf1EBM89aClkyaZTOgxJuEvQwqYceSUMb5cdzywWK9CZ1vt3F6dUZVF6i30CxJ1_zC84bQlaSBGQ_PFydGsbNaiQeai80vZ7o8lbr-ZtfaZFbjky8B092sxhFHcw"/>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label-caps text-label-caps text-white/70 hover:text-white transition-colors hover:bg-white/10 transition-all duration-300 px-4 py-2 rounded-full scale-95 duration-200" href="#">Home</a>
+<a class="font-label-caps text-label-caps text-white/70 hover:text-white transition-colors hover:bg-white/10 transition-all duration-300 px-4 py-2 rounded-full scale-95 duration-200" href="#">About Us</a>
+<div class="dropdown">
+<button class="font-label-caps text-label-caps text-[#F97316] border-b-2 border-[#F97316] pb-1 hover:bg-white/10 transition-all duration-300 px-4 py-2 rounded-full scale-95 duration-200 flex items-center gap-1">
+                Products <span class="material-symbols-outlined text-[14px]">expand_more</span>
+</button>
+<div class="dropdown-content">
+<a class="font-label-caps" href="#">Air Bubble Film</a>
+<a class="font-label-caps" href="#">EPE Foam</a>
+<a class="font-label-caps" href="#">Rubber Base Foam</a>
+<a class="font-label-caps" href="#">Stretch Film</a>
+<a class="font-label-caps" href="#">BOPP Tapes</a>
+<a class="font-label-caps" href="#">PU Foam</a>
+</div>
+</div>
+<a class="font-label-caps text-label-caps text-white/70 hover:text-white transition-colors hover:bg-white/10 transition-all duration-300 px-4 py-2 rounded-full scale-95 duration-200" href="#">Clients</a>
+<a class="font-label-caps text-label-caps text-white/70 hover:text-white transition-colors hover:bg-white/10 transition-all duration-300 px-4 py-2 rounded-full scale-95 duration-200" href="#">Gallery</a>
+<a class="font-label-caps text-label-caps text-white/70 hover:text-white transition-colors hover:bg-white/10 transition-all duration-300 px-4 py-2 rounded-full scale-95 duration-200" href="#">Contact</a>
+</div>
+<button class="bg-[#F97316] text-black font-label-caps text-label-caps px-6 py-3 rounded-full hover:bg-white transition-all duration-300">
+            Inquire
+        </button>
+</nav>
+<!-- Cinematic Hero -->
+<header class="relative w-full min-h-screen flex flex-col justify-center overflow-hidden pt-32 px-gutter lg:px-12 bg-black">
+<div class="absolute inset-0 z-[-1]">
+<div class="absolute inset-0 bg-black/60 z-10 mix-blend-multiply"></div>
+<img alt="" class="w-full h-full object-cover bg-zoom-effect opacity-50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcaZLzcjU576zZ4rvBIGvxWklRWEBFSU_NOzlkhTLfO6awQsvjtuPjGCO3hBGJannGcqBrlwxWElqK2XNk3Z97KpgEbnjbmhIviXAGntT7L9riWlRdflqPQ7H20kD1Axm9iR8F6aDEzSe9KP2hDOJZBZJhDRfmPGvgBBivrIjkZeGdpSg9EcC14_nXEBXM4iGfGBbr1Ri6lEOW3NWRUVRniusbN4v3LTgatDLJBZf5V-T64R6h36J4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent z-20"></div>
+</div>
+<div class="w-full relative z-30">
+<h1 class="massive-text text-white mb-stack-md reveal-up delay-100 flex flex-col">
+<span>Protective</span>
+<span class="text-white/50">Packaging.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-white/70 md:w-1/2 mb-stack-lg reveal-up delay-300">
+                Custom EPE Foam, Air Bubble Film and Protective Packaging Solutions for Automotive, Electronics, Pharma and Industrial Applications. Since 2018.
+            </p>
+<div class="reveal-up delay-500">
+<a class="inline-flex items-center gap-2 bg-[#F97316] text-black font-label-caps text-label-caps px-8 py-4 hover:bg-white transition-colors duration-300 rounded-sm" href="#products">
+                    EXPLORE SOLUTIONS
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">arrow_forward</span>
+</a>
+</div>
+</div>
+</header>
+<!-- Trust Section (Infinite Scroll) -->
+<section class="py-24 overflow-hidden border-y border-white/5 bg-black">
+<div class="scrolling-wrapper items-center gap-24 opacity-40">
+<!-- Duplicated for infinite effect -->
+<div class="flex items-center gap-24">
+<div class="font-headline-md text-headline-md font-bold tracking-widest text-white uppercase">AUTOMOTIVE</div>
+<div class="font-headline-md text-headline-md font-bold tracking-widest text-white uppercase">ELECTRONICS</div>
+<div class="font-headline-md text-headline-md font-bold tracking-widest text-white uppercase">PHARMACEUTICAL</div>
+<div class="font-headline-md text-headline-md font-bold tracking-widest text-white uppercase">INDUSTRIAL</div>
+<div class="font-headline-md text-headline-md font-bold tracking-widest text-white uppercase">AUTOMOTIVE</div>
+</div>
+<div class="flex items-center gap-24">
+<div class="font-headline-md text-headline-md font-bold tracking-widest text-white uppercase">AUTOMOTIVE</div>
+<div class="font-headline-md text-headline-md font-bold tracking-widest text-white uppercase">ELECTRONICS</div>
+<div class="font-headline-md text-headline-md font-bold tracking-widest text-white uppercase">PHARMACEUTICAL</div>
+<div class="font-headline-md text-headline-md font-bold tracking-widest text-white uppercase">INDUSTRIAL</div>
+<div class="font-headline-md text-headline-md font-bold tracking-widest text-white uppercase">AUTOMOTIVE</div>
+</div>
+</div>
+</section>
+<!-- Product Showcase Centerpiece (Clean Tech White) -->
+<section class="py-section-padding px-gutter lg:px-24 bg-white text-black transition-colors duration-1000" id="products"><div class="max-w-container-max mx-auto">
+<div class="mb-stack-lg reveal-up text-center">
+<h2 class="font-label-caps text-label-caps text-[#F97316] mb-stack-sm tracking-[0.2em]">OUR CAPABILITIES</h2>
+<h3 class="font-headline-lg text-headline-lg text-black font-extrabold">Precision Protection</h3>
+</div>
+<div class="flex flex-col gap-48">
+<!-- Product 1: EPE Foam (Image Left / Content Right) -->
+<div class="flex flex-col lg:flex-row items-center gap-16 reveal-up">
+<div class="w-full lg:w-[65%] rounded-xl overflow-hidden bg-gray-100 shadow-2xl">
+<img alt="Engineered EPE Foam" class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida/AP1WRLujzzS2banlh85hmUo-G55p-GxNa-kk8mGX2dmaaxf9ATbAjzPeW4CtGEyXdmllD64Ji-QF-zg4aTmTTrT_KFau9PhakPjdlairrceF1TtgsLntvphGFizOXbG2QrjPmSKICjWgZ84T2IsBKBLilCqnT5bzOHyxsTIg_rlE6hb-sDypp4v4o4ey_ivoLRyG9YA-Jkj9q9zXH3oodVY-d2u9Q7R-ikqszf8bjR7lA0-9iAvDqXez7ztWyq4"/>
+</div>
+<div class="w-full lg:w-[35%] space-y-8">
+<h4 class="font-headline-lg text-headline-md lg:text-headline-lg font-bold leading-tight">Engineered Polyethylene (EPE) Foam</h4>
+<p class="font-body-lg text-body-lg text-gray-700 leading-relaxed">Closed-cell structure providing superior shock absorption, thermal insulation, and moisture resistance. Available in Sheet, Tube, and Rod formats.</p>
+<div class="grid grid-cols-2 gap-4">
+<div class="p-6 bg-black text-white rounded-lg">
+<div class="text-4xl font-bold text-[#F97316]">99%</div>
+<div class="text-label-caps opacity-60 mt-1">Shock Absorption</div>
+</div>
+<div class="p-6 bg-black text-white rounded-lg">
+<div class="text-4xl font-bold text-[#F97316]">0%</div>
+<div class="text-label-caps opacity-60 mt-1">Moisture</div>
+</div>
+</div>
+<a class="group inline-flex items-center gap-2 text-[#F97316] font-label-caps tracking-widest hover:text-black transition-colors" href="#">
+                    VIEW TECHNICAL SPECS
+                    <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_right_alt</span>
+</a>
+</div>
+</div>
+<!-- Product 2: Air Bubble Film (Content Left / Image Right) -->
+<div class="flex flex-col lg:flex-row-reverse items-center gap-16 reveal-up">
+<div class="w-full lg:w-[65%] rounded-xl overflow-hidden bg-gray-100 shadow-2xl">
+<img alt="Industrial Air Bubble Film" class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida/AP1WRLugfK53KpB8-wrmpJhUczVVkkbqbTqs4hzz1yX4_fJHrKr960zGc6paYpZiRbkV8qRd5MQViMUe16QI-2FV0I-z9nNwXiye_uBpJrXYNEXFOTHohQj0zoMrYQqhnuz3zlGFM3g3qcNJxszzGLbn40gsAQ4Cr8Y-JaouC2bbRzk0bnt33OD4rd-_gqeQuDpvLdHvapoBVaPL929zQK6KPILCD8QHP_HYI-zuvt4kwxgcV1XJC_eYNoJHQA"/>
+</div>
+<div class="w-full lg:w-[35%] space-y-8">
+<h4 class="font-headline-lg text-headline-md lg:text-headline-lg font-bold leading-tight">Air Bubble Film</h4>
+<p class="font-body-lg text-body-lg text-gray-700 leading-relaxed">Multi-layer co-extruded barrier technology ensuring long-term air retention for sustained protection. Available in 2 Layer, 3 Layer, and Laminated options.</p>
+<div class="grid grid-cols-2 gap-4">
+<div class="p-6 bg-black text-white rounded-lg">
+<div class="text-4xl font-bold text-[#F97316]">3x</div>
+<div class="text-label-caps opacity-60 mt-1">Air Retention</div>
+</div>
+<div class="p-6 bg-black text-white rounded-lg">
+<div class="text-4xl font-bold text-[#F97316]">100%</div>
+<div class="text-label-caps opacity-60 mt-1">Recyclable</div>
+</div>
+</div>
+<a class="group inline-flex items-center gap-2 text-[#F97316] font-label-caps tracking-widest hover:text-black transition-colors" href="#">
+                    VIEW TECHNICAL SPECS
+                    <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_right_alt</span>
+</a>
+</div>
+</div>
+<!-- Product 3: Technical Foam (Image Left / Content Right) -->
+<div class="flex flex-col lg:flex-row items-center gap-16 reveal-up">
+<div class="w-full lg:w-[65%] rounded-xl overflow-hidden bg-gray-100 shadow-2xl">
+<img alt="Precision Cut Foam" class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida/AP1WRLscXpJ6wB71CV28AwxEm3KZC39Yk65nNhDq-sxolXAL9FbTN-4Wr0PEOlWcAKPhZ8PyQhqrvflRVGmjAlQB_pefqabs20DdUUAs_PF2Z4jbnrcCDgrJmLTjjDChuvKbO7ec9KvrVudbHjMYcKBs_Wm4SwQ9Chl-Gr3mirCY5Q7O2QgSbUDyPnyxjvp7utWXSH72sffDGY_oxuVdumnpVIiFMQiWp7b0UINUUKCrtaAg4HXT0Kt1HGXawQ"/>
+</div>
+<div class="w-full lg:w-[35%] space-y-8">
+<h4 class="font-headline-lg text-headline-md lg:text-headline-lg font-bold leading-tight">Rubber Base Foam</h4>
+<p class="font-body-lg text-body-lg text-gray-700 leading-relaxed">High-performance Crosslinked, EPDM, XLPE, and Nitril foam solutions designed for extreme industrial applications and environmental resistance.</p>
+<div class="p-6 bg-black text-white rounded-lg">
+<div class="text-4xl font-bold text-[#F97316]">Industrial</div>
+<div class="text-label-caps opacity-60 mt-1">Grade Resilience</div>
+</div>
+<a class="group inline-flex items-center gap-2 text-[#F97316] font-label-caps tracking-widest hover:text-black transition-colors" href="#">
+                    VIEW TECHNICAL SPECS
+                    <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_right_alt</span>
+</a>
+</div>
+</div>
+<!-- Product 4: Bulk Industrial (Content Left / Image Right) -->
+<div class="flex flex-col lg:flex-row-reverse items-center gap-16 reveal-up">
+<div class="w-full lg:w-[65%] rounded-xl overflow-hidden bg-gray-100 shadow-2xl">
+<img alt="Bulk Industrial Rolls" class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida/AP1WRLuqAUSKgOsG8_FTzcGPJ3avLJ3LerVzNfEpnCFnc2EAkPgivQt3-GdYNX1Gfb40vutsJPbPNy8AxsPeu5Qe0PU8rg_puqm-EngcBSQFS8ieaE4SqeJ3Cqx3RPy7DWsC25lnqILUtpa8vcaNoTGrI3MrW-dF4u8tThh2t6QlkXHPmMSnFWYDiJt0B4IhhTMmjjCHOZs4y475jpGCtU13HQSZZkXQrI0Dd8ZQ0P_gS5nkaGWjekbzu6XyMog"/>
+</div>
+<div class="w-full lg:w-[35%] space-y-8">
+<h4 class="font-headline-lg text-headline-md lg:text-headline-lg font-bold leading-tight">PU Foam Sheet</h4>
+<p class="font-body-lg text-body-lg text-gray-700 leading-relaxed">Versatile Polyurethane foam sheets offering exceptional cushioning, flexibility, and durability for custom packaging requirements.</p>
+<div class="p-6 bg-black text-white rounded-lg">
+<div class="text-4xl font-bold text-[#F97316]">Custom</div>
+<div class="text-label-caps opacity-60 mt-1">Sizing Available</div>
+</div>
+<a class="group inline-flex items-center gap-2 text-[#F97316] font-label-caps tracking-widest hover:text-black transition-colors" href="#">
+                    VIEW TECHNICAL SPECS
+                    <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_right_alt</span>
+</a>
+</div>
+</div>
+</div>
+</div></section>
+<!-- Signature Section: Engineered Structure (Three.js) -->
+<section class="py-section-padding bg-black relative min-h-screen flex items-center border-t border-white/10">
+<div class="absolute inset-0 z-0">
+</div>
+<div class="max-w-container-max mx-auto px-gutter relative z-10 w-full pointer-events-none">
+<div class="w-full lg:w-1/3 pointer-events-auto">
+<h2 class="font-label-caps text-label-caps text-[#F97316] mb-stack-sm tracking-[0.2em] reveal-up">SIGNATURE ENGINEERING</h2>
+<h3 class="font-display-2xl text-[80px] leading-tight text-white font-bold mb-stack-lg reveal-up delay-100">Molecular <br/>Precision.</h3>
+<p class="font-body-lg text-body-lg text-white/70 mb-stack-lg reveal-up delay-200">
+                    Interact with the 3D model to explore the closed-cell polymer structure that gives our packaging its unparalleled strength-to-weight ratio.
+                </p>
+<div class="space-y-6 reveal-up delay-300">
+<div class="flex items-start gap-4">
+<div class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-[#F97316] font-bold text-sm shrink-0">1</div>
+<div>
+<h5 class="text-white font-bold mb-1">Cross-Linked Bonds</h5>
+<p class="text-white/50 text-sm">Enhances thermal stability and shock resilience.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-[#F97316] font-bold text-sm shrink-0">2</div>
+<div>
+<h5 class="text-white font-bold mb-1">Micro-Cellular Void</h5>
+<p class="text-white/50 text-sm">Traps inert gas for maximum impact absorption.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="absolute bottom-12 right-12 text-white/30 font-label-caps tracking-widest text-sm flex items-center gap-2">
+<span class="material-symbols-outlined">360</span>
+        DRAG TO ROTATE
+    </div>
+</section>
+<!-- Industries Section (Obsidian Black) -->
+<section class="py-section-padding bg-[#0A0A0A] relative overflow-hidden">
+<div class="max-w-container-max mx-auto px-gutter relative z-10">
+<div class="mb-24 reveal-up">
+<h2 class="font-label-caps text-label-caps text-[#F97316] mb-stack-sm tracking-[0.2em]">SECTORS</h2>
+<h3 class="font-headline-lg text-headline-lg text-white font-extrabold">Global Reach</h3>
+</div>
+<div class="flex flex-col gap-4">
+<div class="relative group border-b border-white/10 pb-4">
+<h4 class="massive-text text-white/40 industry-item cursor-pointer">AUTOMOTIVE</h4>
+<div class="absolute inset-0 bg-[url('https://lh3.googleusercontent.com/aida-public/AB6AXuAcaZLzcjU576zZ4rvBIGvxWklRWEBFSU_NOzlkhTLfO6awQsvjtuPjGCO3hBGJannGcqBrlwxWElqK2XNk3Z97KpgEbnjbmhIviXAGntT7L9riWlRdflqPQ7H20kD1Axm9iR8F6aDEzSe9KP2hDOJZBZJhDRfmPGvgBBivrIjkZeGdpSg9EcC14_nXEBXM4iGfGBbr1Ri6lEOW3NWRUVRniusbN4v3LTgatDLJBZf5V-T64R6h36J4')] bg-cover bg-center z-[-1] industry-bg mix-blend-luminosity"></div>
+</div>
+<div class="relative group border-b border-white/10 pb-4">
+<h4 class="massive-text text-white/40 industry-item cursor-pointer">ELECTRONICS</h4>
+</div>
+<div class="relative group border-b border-white/10 pb-4">
+<h4 class="massive-text text-white/40 industry-item cursor-pointer">PHARMACEUTICAL</h4>
+</div>
+<div class="relative group pb-4">
+<h4 class="massive-text text-white/40 industry-item cursor-pointer">INDUSTRIAL</h4>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us -->
+<section class="py-section-padding bg-black text-white border-t border-white/10">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="mb-24 text-center reveal-up">
+<h2 class="font-label-caps text-label-caps text-[#F97316] mb-stack-sm tracking-[0.2em]">WHY CHOOSE US</h2>
+<h3 class="font-headline-lg text-headline-lg text-white font-extrabold">Excellence Delivered</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="p-8 border border-white/10 rounded-xl bg-white/5 hover:bg-white/10 transition-colors duration-300 reveal-up">
+<span class="material-symbols-outlined text-4xl text-[#F97316] mb-6">verified</span>
+<h4 class="font-headline-md text-2xl font-bold mb-4">Rigorous Quality Standards</h4>
+<p class="text-white/60">Uncompromising commitment to quality control at every stage of production.</p>
+</div>
+<div class="p-8 border border-white/10 rounded-xl bg-white/5 hover:bg-white/10 transition-colors duration-300 reveal-up delay-100">
+<span class="material-symbols-outlined text-4xl text-[#F97316] mb-6">history</span>
+<h4 class="font-headline-md text-2xl font-bold mb-4">Extensive Industry Experience</h4>
+<p class="text-white/60">Trusted partner since 2018, delivering proven packaging solutions.</p>
+</div>
+<div class="p-8 border border-white/10 rounded-xl bg-white/5 hover:bg-white/10 transition-colors duration-300 reveal-up delay-200">
+<span class="material-symbols-outlined text-4xl text-[#F97316] mb-6">support_agent</span>
+<h4 class="font-headline-md text-2xl font-bold mb-4">Customer-Centric Service</h4>
+<p class="text-white/60">Dedicated support team focused on your specific packaging requirements.</p>
+</div>
+<div class="p-8 border border-white/10 rounded-xl bg-white/5 hover:bg-white/10 transition-colors duration-300 reveal-up delay-300">
+<span class="material-symbols-outlined text-4xl text-[#F97316] mb-6">eco</span>
+<h4 class="font-headline-md text-2xl font-bold mb-4">Sustainability Focus</h4>
+<p class="text-white/60">Eco-conscious manufacturing processes and recyclable product lines.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer (Shared Component) -->
+<footer class="bg-black w-full pt-[160px] pb-12 border-t border-white/10 flex flex-col items-center">
+<div class="max-w-container-max mx-auto px-gutter w-full">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-24 border-b border-white/10 pb-24">
+<div class="col-span-1 lg:col-span-2">
+<div class="font-headline-lg text-headline-lg text-white font-extrabold mb-8 text-[3rem] lg:text-[4rem] leading-none">Vishwaraj<br/>Polychem</div>
+<p class="text-white/50 max-w-md">Precision Engineering in Protective Packaging. Trusted solutions since 2018.</p>
+</div>
+<div>
+<h4 class="font-label-caps text-[#F97316] mb-6 tracking-widest">CONTACT INFO</h4>
+<ul class="space-y-4 text-white/70">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-[#F97316] mt-1">location_on</span>
+<span>Gate No. 199, Behind Jyotiba Mandir, Jyotiba Nager MIDC, Talawade, Bhosari, Pune-411039</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#F97316]">call</span>
+<span>+91 9921053399<br/>+91 8999884602</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#F97316]">mail</span>
+<span>vishwaraj99@rediffmail.com<br/>info@vishwarajgroup.com</span>
+</li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-caps text-[#F97316] mb-6 tracking-widest">QUICK LINKS</h4>
+<ul class="space-y-4">
+<li><a class="text-white/50 hover:text-[#F97316] transition-colors" href="#">Home</a></li>
+<li><a class="text-white/50 hover:text-[#F97316] transition-colors" href="#">About Us</a></li>
+<li><a class="text-white/50 hover:text-[#F97316] transition-colors" href="#">Products</a></li>
+<li><a class="text-white/50 hover:text-[#F97316] transition-colors" href="#">Contact</a></li>
+</ul>
+</div>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-center w-full">
+<div class="font-body-md text-body-md text-white/30 text-center md:text-left mb-4 md:mb-0">
+                © 2024 Vishwaraj Polychem Private Limited. All rights reserved.
+            </div>
+<div class="flex gap-6">
+<a class="font-body-md text-body-md text-white/50 hover:text-[#F97316] transition-colors duration-300" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-white/50 hover:text-[#F97316] transition-colors duration-300" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Scroll reveal logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.reveal-up, .reveal-right, .reveal-left, .reveal-scale').forEach((el) => {
+                observer.observe(el);
+            });
+            
+            // Image swap for sticky section on scroll
+            const productSection = document.getElementById('products');
+            if(productSection && window.innerWidth >= 1024) {
+                const stickyImage = document.getElementById('sticky-image');
+                const productBlocks = document.querySelectorAll('.product-block');
+                
+                const productObserverOptions = {
+                    root: null,
+                    rootMargin: '-40% 0px -40% 0px',
+                    threshold: 0
+                };
+
+                const productObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const newSrc = entry.target.getAttribute('data-image');
+                            if(stickyImage.src !== newSrc && newSrc) {
+                                stickyImage.style.opacity = 0;
+                                setTimeout(() => {
+                                    stickyImage.src = newSrc;
+                                    stickyImage.style.opacity = 1;
+                                }, 300);
+                            }
+                        }
+                    });
+                }, productObserverOptions);
+
+                productBlocks.forEach(block => {
+                    productObserver.observe(block);
+                });
+                
+                stickyImage.style.transition = 'opacity 0.3s ease-in-out';
+            }
+        });
+    </script>
+</body></html>

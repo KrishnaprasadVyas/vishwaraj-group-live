@@ -1,0 +1,661 @@
+{
+  "categories": [
+    {
+      "categoryName": "Air Bubble Film",
+      "products": [
+        {
+          "id": "air-bubble-film",
+          "name": "Air Bubble Film",
+          "description": "Bubble Film, also called Air Bubble Film, Bubble Wrap, LDPE Air Bubble Film and so on. It is made of PE, the diameter of our Bubble is 10mm, 20mm, 25mm. The max width can be up to 2000 mm. Besides we can make the Bubble of 2 layer Bubble Film, 3 layers Bubble Film, 5 layers Bubble Film and other multilayer Bubble Film.",
+          "specifications": {
+            "material": "PE (Polyethylene)",
+            "bubbleDiameter": ["10mm", "20mm", "25mm"],
+            "maxWidth": "2000 mm",
+            "layers": ["2 layer", "3 layers", "5 layers", "multilayer"]
+          },
+          "applications": [
+            "Packaging Materials",
+            "Electronics & Electricals Application",
+            "Glassware & Ceramic Products",
+            "Furniture & Handicrafts Products",
+            "Engineering & Automobile spare parts",
+            "Temperature sensitive storage areas",
+            "Painted Parts"
+          ]
+        },
+        {
+          "id": "2-layer-bubble-bags",
+          "name": "2 Layer Bubble Bags",
+          "description": "2-layer bubble bags offer superior protection for delicate items by combining two layers of material. The outer layer is designed to be durable and resistant to punctures and abrasions, while the inner layer features air-filled bubbles that provide cushioning against shocks and impacts. This dual-layer construction ensures that fragile products, such as electronics and glassware, are well-protected during shipping or storage, reducing the risk of damage and enhancing overall safety.",
+          "specifications": {
+            "layers": 2,
+            "outerLayer": "Durable, puncture-resistant",
+            "innerLayer": "Air-filled bubbles"
+          },
+          "applications": [
+            "Electronics",
+            "Glassware",
+            "Fragile products during shipping and storage"
+          ]
+        },
+        {
+          "id": "3-layer-bubble-bags",
+          "name": "3 Layer Bubble Bags",
+          "description": "3-layer bubble bags provide exceptional protection for fragile items by incorporating an additional layer of cushioning compared to standard bubble bags. The outermost layer is crafted from a strong, puncture-resistant material that shields against external damage. Beneath this, a middle layer of air-filled bubbles offers superior shock absorption, cushioning the contents from impacts and vibrations. The innermost layer ensures an extra barrier of protection, preventing any potential scratches or abrasions.",
+          "specifications": {
+            "layers": 3,
+            "outerLayer": "Strong, puncture-resistant material",
+            "middleLayer": "Air-filled bubbles for shock absorption",
+            "innerLayer": "Extra barrier against scratches and abrasions"
+          },
+          "applications": [
+            "Sensitive electronics",
+            "Delicate glassware",
+            "Valuable items during shipping and handling"
+          ]
+        },
+        {
+          "id": "bubble-with-woven-sack-laminated-bags-sheet",
+          "name": "Bubble With Woven Sack Laminated Bags & Sheet",
+          "description": "Laminated bags combining bubble wrap with woven sack material for enhanced durability and protection.",
+          "specifications": {
+            "layers": ["Bubble film", "Woven sack lamination"]
+          },
+          "applications": [
+            "Heavy-duty packaging",
+            "Industrial applications"
+          ]
+        },
+        {
+          "id": "bubble-with-pe-foam-laminated-bags",
+          "name": "Bubble With PE Foam Laminated Bags",
+          "description": "Bubble with PE foam laminated bags are designed to offer superior protection and cushioning for delicate items. These bags integrate the soft, air-filled bubbles of traditional bubble wrap with a layer of polyethylene (PE) foam, which provides additional shock absorption and insulation. The PE foam layer enhances the cushioning effect, reducing the risk of damage from impacts and vibrations during shipping or storage. The laminated construction ensures that the bags are both durable and resilient.",
+          "specifications": {
+            "layers": ["Bubble wrap", "PE Foam lamination"],
+            "features": ["Superior protection", "Shock absorption", "Insulation"]
+          },
+          "applications": [
+            "Fragile electronics",
+            "Glassware",
+            "Sensitive products"
+          ]
+        },
+        {
+          "id": "bubble-with-aluminium-film-laminated-bags-sheet",
+          "name": "Bubble With Aluminium Film Laminated Bags & Sheet",
+          "description": "Bubble with aluminum film laminated bags and sheets offer a robust solution for protecting sensitive items from both physical damage and environmental factors. These products combine the cushioning properties of bubble wrap with a layer of aluminum film, which provides superior resistance to moisture, heat, and light. The aluminum film acts as a barrier against external elements, while the bubble layer absorbs shocks and impacts.",
+          "specifications": {
+            "layers": ["Bubble wrap", "Aluminum film lamination"],
+            "features": [
+              "Moisture resistance",
+              "Heat resistance",
+              "Light protection"
+            ]
+          },
+          "applications": [
+            "Electronics",
+            "Pharmaceuticals",
+            "Temperature-sensitive products"
+          ]
+        },
+        {
+          "id": "antistatic-bubble-bags",
+          "name": "Antistatic Bubble Bags",
+          "description": "Antistatic bubble bags are specialized packaging solutions designed to protect sensitive electronic components and devices from static electricity. These bags feature a layer of air-filled bubbles, which provide cushioning against impacts and shocks, combined with an antistatic material that prevents the buildup and discharge of static electricity. The antistatic properties help safeguard electronic parts from electrostatic discharge (ESD).",
+          "specifications": {
+            "features": ["Antistatic protection", "Shock absorption"],
+            "protection": "Electrostatic Discharge (ESD)"
+          },
+          "applications": [
+            "Electronic components",
+            "Circuit boards",
+            "Static-sensitive items"
+          ]
+        },
+        {
+          "id": "bubble-with-kraft-paper-laminated-sheet",
+          "name": "Bubble With Kraft Paper Laminated Sheet",
+          "description": "Bubble with kraft paper laminated sheets offer a versatile and protective packaging solution by combining the cushioning benefits of bubble wrap with the strength and durability of kraft paper. The kraft paper layer provides an added layer of toughness, enhancing resistance to tearing and abrasion, while the bubble wrap layer absorbs shocks and impacts.",
+          "specifications": {
+            "layers": ["Bubble wrap", "Kraft paper lamination"],
+            "features": [
+              "Tear resistance",
+              "Abrasion resistance",
+              "Rigidity"
+            ]
+          },
+          "applications": [
+            "Fragile glassware",
+            "Electronic components",
+            "General packaging"
+          ]
+        },
+        {
+          "id": "3d-bubble-bags",
+          "name": "3D Bubble Bags",
+          "description": "3D bubble bags feature a unique design that enhances protection for delicate items by incorporating three-dimensional bubble cushioning. Unlike traditional flat bubble wrap, these bags have a structured, three-dimensional bubble pattern that creates a more effective barrier against impacts and vibrations. The additional depth and coverage provided by the 3D bubbles offer superior shock absorption and cushioning.",
+          "specifications": {
+            "design": "Three-dimensional bubble pattern",
+            "features": [
+              "Superior shock absorption",
+              "Enhanced cushioning",
+              "Full surface protection"
+            ]
+          },
+          "applications": [
+            "Fragile products",
+            "Electronics",
+            "Glassware",
+            "High-value items"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryName": "EPE Foam",
+      "products": [
+        {
+          "id": "epe-sheet-and-sheet-application",
+          "name": "EPE Sheet & Sheet Application",
+          "description": "EPE (Expanded Polyethylene) sheets are versatile and lightweight materials used in a variety of applications due to their excellent cushioning, insulation, and impact resistance properties. Made from expanded polyethylene foam, these sheets offer superior shock absorption, thermal insulation, and resistance to moisture and chemicals.",
+          "specifications": {
+            "material": "Expanded Polyethylene (EPE)",
+            "properties": [
+              "Shock absorption",
+              "Thermal insulation",
+              "Moisture resistance",
+              "Chemical resistance"
+            ]
+          },
+          "applications": [
+            "Packaging to protect fragile items during shipping",
+            "Construction for insulation purposes",
+            "Automotive and industrial applications for noise and vibration reduction"
+          ]
+        },
+        {
+          "id": "epe-sheet-rolls-and-sheet-applications",
+          "name": "EPE Sheet Rolls & Sheet Applications",
+          "description": "EPE Sheet Rolls And Sheet Application provides versatile packaging and cushioning solutions across multiple industries.",
+          "specifications": {
+            "form": "Rolls and Sheets"
+          },
+          "applications": [
+            "Packaging solutions: Dust covers, bubble wrap, corner pads, support pads, PE packaging buffers, encapsulation blocks, display usage etc.",
+            "Packaging of consumer durables and white goods like TV covers, Refrigerator packaging, LCD/LED packaging etc.",
+            "Packing material for painted surface of components",
+            "Expansion joint filler Construction etc.",
+            "Automobiles: Carpet underlays, gaskets, seat cushion inserts, door liners, side / roof panels etc.",
+            "Transit packing of vehicles, returnable/multiple use packing material, domestic and exports spares packing, component packing, packing material for 2-wheelers steering wheel covers, windshield covers, die-punch wheel arch pads etc."
+          ]
+        },
+        {
+          "id": "epe-foam-tube",
+          "name": "EPE Foam Tube",
+          "description": "EPE Foam Tubes are manufactured using advanced machines following all the quality norms set by the industry. Extensively being used for thermal insulation in refrigeration and AC industries, our products are high in demand for their reliable performance, low water absorption and vapor permeability and it protects & degreases piping systems of AC.",
+          "specifications": {
+            "form": "Tube",
+            "properties": [
+              "Thermal insulation",
+              "Low water absorption",
+              "Low vapor permeability"
+            ],
+            "manufacturing": "Advanced machines, quality norms compliance"
+          },
+          "applications": [
+            "Refrigeration packaging material",
+            "Thermal insulation in refrigeration and AC industries",
+            "Piping systems protection for AC"
+          ]
+        },
+        {
+          "id": "epe-foam-rod",
+          "name": "EPE Foam Rod",
+          "description": "EPE Foam Rods are versatile, lightweight components made from expanded polyethylene foam, designed to offer excellent cushioning, insulation, and impact resistance. Their flexible yet durable nature allows them to be easily cut and shaped for custom applications.",
+          "specifications": {
+            "form": "Rod",
+            "properties": [
+              "Cushioning",
+              "Insulation",
+              "Impact resistance",
+              "Flexible",
+              "Durable"
+            ]
+          },
+          "applications": [
+            "Packaging to protect delicate items from shock and vibration during transit",
+            "Construction and manufacturing for insulation and noise reduction",
+            "Sealing gaps, padding edges, creating protective barriers",
+            "Spacers and supports in industrial and automotive applications"
+          ]
+        },
+        {
+          "id": "epe-polyethylene-foam",
+          "name": "EPE Polyethylene Foam",
+          "description": "EPE Foam has proved to be a superior insulating material because of its extremely low thermal conductivity and moisture absorbent properties. Without affecting its properties, EPE Foam can be used in temperature ranging from -40 degree to 70 degree.",
+          "specifications": {
+            "temperatureRange": "-40°C to 70°C",
+            "properties": [
+              "Low thermal conductivity",
+              "Moisture absorbent resistant",
+              "Chemical Resistant: Inert to most corrosive chemicals such as acids, alkalies and other chemical solvents"
+            ]
+          },
+          "applications": [
+            "Insulation",
+            "Packaging",
+            "General industrial use"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryName": "PU Foam",
+      "products": [
+        {
+          "id": "pu-foam-sheet",
+          "name": "PU Foam Sheet",
+          "description": "As a pioneer in foam conversion industry, our product range covers self-adhesive/non-adhesive foam parts, fabric laminated foam parts, aluminium laminated foam parts, seals & Gaskets, Thermoformed Components, PU moulded foam components, Heat shields / Thermal Jackets, Over Moulding Plastic components, Fabric Insert Moulded Parts, Foam Parts, Felt Parts, Foam Tapes, Door Trims, and many more.",
+          "specifications": {
+            "material": "Polyurethane (PU) Foam",
+            "productRange": [
+              "Self-adhesive foam parts",
+              "Non-adhesive foam parts",
+              "Fabric laminated foam parts",
+              "Aluminium laminated foam parts",
+              "Seals & Gaskets",
+              "Thermoformed Components",
+              "PU moulded foam components",
+              "Heat shields / Thermal Jackets",
+              "Over Moulding Plastic components",
+              "Fabric Insert Moulded Parts",
+              "Foam Parts",
+              "Felt Parts",
+              "Foam Tapes",
+              "Door Trims"
+            ],
+            "grades": ["FR Grade", "Non FR Grade"]
+          },
+          "applications": [
+            "Self Adhesive Non Adhesive Foam Parts",
+            "Noise Vibration And Heat Management",
+            "Industrial Insulation",
+            "Architecture And Interior Design",
+            "Foam Tapes And Sealings"
+          ],
+          "industryApplications": [
+            "Building & Constructions",
+            "Automotive Industries",
+            "Home Appliances Industries",
+            "Electronics & Electricals Industries",
+            "Generator Canopy Industries",
+            "Machinery And Foundry Industries",
+            "Furniture & Bedding Industries",
+            "Refrigerator & Washing Machine Industries"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryName": "Crosslinked Foam",
+      "products": [
+        {
+          "id": "crosslinked-foam",
+          "name": "Crosslinked Foam",
+          "description": "Crosslinked foam are excellent product of closed cell structure, which fulfills our customer's packaging, transporting and marketing objectives in cost effective way. They ensure the protection of your product. We offer Cross Linked Foam in variety of Colour and wide range of rolls, planks, and fabricated products to suit Customers specific Requirements.",
+          "specifications": {
+            "structure": "Closed cell",
+            "forms": ["Rolls", "Planks", "Fabricated products"],
+            "colors": "Variety of colours available"
+          },
+          "types": [
+            "Die Cut Components",
+            "Foam Types From Sealing Die Gaskets"
+          ],
+          "applications": [
+            "Packaging",
+            "Transporting",
+            "Marketing objectives"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryName": "EPDM Foam",
+      "products": [
+        {
+          "id": "epdm-foam",
+          "name": "EPDM Foam",
+          "description": "EPDM Foam, made from ethylene propylene diene monomer rubber, is renowned for its exceptional durability and versatility. It offers excellent resistance to weathering, ozone, UV radiation, and extreme temperatures, making it ideal for outdoor and industrial applications.",
+          "specifications": {
+            "material": "Ethylene Propylene Diene Monomer (EPDM) Rubber",
+            "types": ["Closed Cell", "Open Cell"],
+            "forms": ["Die components"],
+            "properties": [
+              "Weathering resistance",
+              "Ozone resistance",
+              "UV radiation resistance",
+              "Extreme temperature resistance",
+              "Lightweight",
+              "Flexible",
+              "Thermal insulation",
+              "Acoustic insulation"
+            ]
+          },
+          "applications": [
+            "Sealing material",
+            "Insulation",
+            "Cushioning in automotive, construction, and manufacturing sectors"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryName": "XLPE Foam",
+      "products": [
+        {
+          "id": "xlpe-foam",
+          "name": "XLPE Foam",
+          "description": "XLPE (Cross-Linked Polyethylene) foam is a high-performance material known for its excellent cushioning, insulation, and impact resistance properties. Created through a cross-linking process that enhances its structural integrity, XLPE foam offers superior durability, thermal insulation, and resistance to moisture, chemicals, and UV radiation.",
+          "specifications": {
+            "material": "Cross-Linked Polyethylene (XLPE)",
+            "structure": "Closed-cell",
+            "properties": [
+              "Cushioning",
+              "Insulation",
+              "Impact resistance",
+              "Durability",
+              "Thermal insulation",
+              "Moisture resistance",
+              "Chemical resistance",
+              "UV radiation resistance",
+              "Low water absorption"
+            ]
+          },
+          "applications": [
+            "Die Components",
+            "Roof Sealing",
+            "Heating & Refrigeration pipes",
+            "Impact Sound insulation",
+            "Door insulation",
+            "Seat Covers",
+            "Air Duct & Pipe insulation",
+            "For Cooling"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryName": "Nitril Foam",
+      "products": [
+        {
+          "id": "nitril-foam",
+          "name": "NITRIL Foam",
+          "description": "Nitrile foam, composed of nitrile rubber and known for its high resilience and durability, is widely used for its exceptional oil and chemical resistance, as well as its excellent cushioning and insulation properties. This closed-cell foam material is highly effective at dampening vibrations, providing thermal insulation, and creating a reliable barrier against water, air, and noise.",
+          "specifications": {
+            "material": "Nitrile Rubber",
+            "structure": "Closed-cell",
+            "types": ["Closed Cell", "Open Cell"],
+            "forms": ["Die Components"],
+            "properties": [
+              "High resilience",
+              "Durability",
+              "Oil resistance",
+              "Chemical resistance",
+              "Cushioning",
+              "Insulation",
+              "Vibration dampening",
+              "Thermal insulation",
+              "Water barrier",
+              "Air barrier",
+              "Noise barrier"
+            ]
+          },
+          "applications": [
+            "Automotive",
+            "Industrial applications",
+            "HVAC systems",
+            "Sealing material",
+            "Vibration dampener",
+            "Thermal insulator"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryName": "Stretch Film & BOPP Tapes",
+      "products": [
+        {
+          "id": "stretch-film",
+          "name": "Stretch Film",
+          "description": "Stretch Film is wrapped around items and Pallets. It's an Affordable way to protect your Pallets load as well as keep items clean during transport. Stretch wrap Film is offered as hand Stretch Film and Machine Stretch Film Rolls.",
+          "specifications": {
+            "types": [
+              "Hand Stretch Film",
+              "Machine Stretch Film"
+            ],
+            "grades": [
+              "Manual Grade Stretch Film",
+              "Machine Grade Stretch Film",
+              "Baby Core Stretch Film"
+            ],
+            "guarantee": "All dimensions (Thickness, Width and Length) are guaranteed"
+          },
+          "applications": [
+            "Pallet-Packing",
+            "Warehouse Storage",
+            "Electronics",
+            "Building Materials",
+            "Automobile Components",
+            "Chemical Products",
+            "Containers",
+            "Food wrapping",
+            "Packing of Corrugated Boxes",
+            "Packing of Loose and Small Products Together",
+            "Wrapping Pallets / Food Items",
+            "Packing of Big Machines"
+          ]
+        },
+        {
+          "id": "bopp-tapes",
+          "name": "BOPP Tapes",
+          "description": "BOPP Tapes are Biaxially Oriented Polypropylene tapes used for sealing cartons without distortion of products inside cartons. These tapes are environment friendly and keep cartons bound together for longer time without causing any damage due to impact of outer environment.",
+          "specifications": {
+            "material": "Biaxially Oriented Polypropylene (BOPP)",
+            "features": [
+              "Environment friendly",
+              "Long-lasting bond",
+              "No product distortion"
+            ]
+          },
+          "range": [
+            "Plain BOPP Tapes",
+            "Color BOPP Tapes",
+            "Printed BOPP Tapes",
+            "Transparent BOPP Tapes",
+            "Masking Tapes",
+            "Electrical Insulation Tapes",
+            "HDPE Tapes",
+            "Kraft Paper Tapes"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryName": "Export Packaging Items",
+      "products": [
+        {
+          "id": "export-packaging-items",
+          "name": "Export Packaging Items",
+          "description": "Export Packaging Items are essential for ensuring that goods are safely transported and protected during international shipping. These packaging solutions are designed to withstand the rigors of long-distance transit, handling, and varying environmental conditions.",
+          "specifications": {
+            "materials": [
+              "Corrugated cardboard",
+              "Wooden crates",
+              "Custom-designed pallets"
+            ],
+            "compliance": [
+              "Labeling requirements",
+              "Documentation",
+              "International standards compliance"
+            ]
+          },
+          "subProducts": [
+            "VCI (Volatile Corrosion Inhibitor) Bags",
+            "3D Bags",
+            "Silica Gel",
+            "PVC Strapping Strip",
+            "PET Strap",
+            "Dunnage Bags"
+          ],
+          "applications": [
+            "International shipping",
+            "Long-distance transit protection",
+            "Regulatory compliance packaging"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryName": "Industrial Chemicals",
+      "products": [
+        {
+          "id": "industrial-chemicals",
+          "name": "Industrial Chemicals",
+          "description": "Industrial chemicals play a critical role in the global manufacturing and processing sectors, serving as essential inputs for a wide range of applications. These chemicals, encompassing acids, alkalis, solvents, and specialty compounds, are pivotal in industries such as pharmaceuticals, agriculture, textiles, and construction.",
+          "specifications": {
+            "chemicalTypes": [
+              "Acids",
+              "Alkalis",
+              "Solvents",
+              "Specialty compounds"
+            ],
+            "qualityControl": "Stringent quality control and adherence to safety and environmental regulations",
+            "rAndD": "Heavy investment in research and development for innovation, performance improvement, sustainability, and safety"
+          },
+          "categories": [
+            "Industrial Cleaning Solvents",
+            "Industrial Acids",
+            "ETP Plants Chemicals",
+            "RO Plants Chemicals & Spares",
+            "Cooling Tower Plant Chemicals",
+            "Dairy Industries Chemicals",
+            "Home Appliances Industries Chemicals",
+            "Electric Components Cleaning Chemicals"
+          ],
+          "industriesServed": [
+            "Pharmaceuticals",
+            "Agriculture",
+            "Textiles",
+            "Construction",
+            "Manufacturing",
+            "Processing sectors"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryName": "Die Casting Components (Associated Entity)",
+      "products": [
+        {
+          "id": "gravity-die-casting",
+          "name": "Gravity Die Casting",
+          "description": "Precision gravity die casting components manufactured by associated entity Shreeniwas Casttech Industries.",
+          "specifications": {},
+          "applications": ["Automotive", "Industrial"]
+        },
+        {
+          "id": "shell-core-casting",
+          "name": "Shell Core Casting",
+          "description": "High-precision shell core casting components.",
+          "specifications": {},
+          "applications": ["Automotive", "Industrial"]
+        },
+        {
+          "id": "finished-components",
+          "name": "Finished Components",
+          "description": "Ready-to-use finished die-cast components.",
+          "specifications": {},
+          "applications": ["Various industries"]
+        },
+        {
+          "id": "non-ferrous-die-casting",
+          "name": "Non Ferrous Die Casting",
+          "description": "Die casting in non-ferrous metals.",
+          "specifications": {},
+          "applications": ["Automotive", "Industrial"]
+        },
+        {
+          "id": "aluminum-die-casting",
+          "name": "Aluminum Die Casting",
+          "description": "Precision aluminum die casting components.",
+          "specifications": {},
+          "applications": ["Automotive", "Industrial"]
+        },
+        {
+          "id": "aluminum-footrest",
+          "name": "Aluminum Footrest",
+          "description": "Cast aluminum footrest components.",
+          "specifications": {},
+          "applications": ["Automotive"]
+        },
+        {
+          "id": "cnc-components",
+          "name": "CNC Components",
+          "description": "Computer Numerical Control machined precision components.",
+          "specifications": {},
+          "applications": ["Precision engineering", "Industrial"]
+        },
+        {
+          "id": "vmc-components",
+          "name": "VMC Components",
+          "description": "Vertical Machining Center produced components.",
+          "specifications": {},
+          "applications": ["Precision engineering", "Industrial"]
+        },
+        {
+          "id": "valve-casting",
+          "name": "Valve Casting",
+          "description": "Cast valve components.",
+          "specifications": {},
+          "applications": ["Fluid control systems", "Industrial"]
+        },
+        {
+          "id": "led-street-light-casting",
+          "name": "LED Street Light Casting",
+          "description": "Die cast housings and components for LED street lights.",
+          "specifications": {},
+          "applications": ["Street lighting", "Infrastructure"]
+        },
+        {
+          "id": "gearbox-casting",
+          "name": "Gearbox Casting",
+          "description": "Cast gearbox components.",
+          "specifications": {},
+          "applications": ["Automotive", "Industrial machinery"]
+        },
+        {
+          "id": "manifold-die-casting",
+          "name": "Manifold Die Casting",
+          "description": "Die cast manifold components.",
+          "specifications": {},
+          "applications": ["Automotive", "Fluid systems"]
+        }
+      ]
+    }
+  ],
+  "totalProducts": 26,
+  "productCategories": [
+    "Air Bubble Film",
+    "EPE Foam",
+    "PU Foam",
+    "Crosslinked Foam",
+    "EPDM Foam",
+    "XLPE Foam",
+    "Nitril Foam",
+    "Stretch Film & BOPP Tapes",
+    "Export Packaging Items",
+    "Industrial Chemicals",
+    "Die Casting Components"
+  ]
+}

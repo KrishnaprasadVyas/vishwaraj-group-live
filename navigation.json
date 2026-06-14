@@ -1,0 +1,299 @@
+{
+  "mainNavigation": [
+    {
+      "id": "home",
+      "label": "Home",
+      "url": "/",
+      "type": "page"
+    },
+    {
+      "id": "about-us",
+      "label": "About Us",
+      "url": "/about-us.php",
+      "type": "page"
+    },
+    {
+      "id": "products",
+      "label": "Products",
+      "type": "dropdown",
+      "children": [
+        {
+          "id": "air-bubble-film-category",
+          "label": "Air Bubble Film",
+          "type": "category",
+          "children": [
+            {
+              "id": "air-bubble-film",
+              "label": "Air Bubble Film",
+              "url": "/air-bubble-film.php",
+              "type": "page"
+            },
+            {
+              "id": "2-layer-bubble-bags",
+              "label": "2 Layer Bubble Bags",
+              "url": "/2-layer-bubble-bags.php",
+              "type": "page"
+            },
+            {
+              "id": "3-layer-bubble-bags",
+              "label": "3 Layer Bubble Bags",
+              "url": "/3-layer-bubble-bags.php",
+              "type": "page"
+            },
+            {
+              "id": "bubble-with-woven-sack-laminated-bags-sheet",
+              "label": "Bubble With Woven Sack Laminated Bags & Sheet",
+              "url": "/bubble-with-woven-sack-laminated-bags-and-sheet.php",
+              "type": "page"
+            },
+            {
+              "id": "bubble-with-pe-foam-laminated-bags",
+              "label": "Bubble With PE Foam Laminated Bags",
+              "url": "/bubble-with-pe-foam-laminated-bags.php",
+              "type": "page"
+            },
+            {
+              "id": "bubble-with-aluminium-film-laminated-bags-sheet",
+              "label": "Bubble With Alluminium Film Laminated Bags & Sheet",
+              "url": "/bubble-with-alluminium-film-laminated-bags-and-sheet.php",
+              "type": "page"
+            },
+            {
+              "id": "antistatic-bubble-bags",
+              "label": "Antistatic Bubble Bags",
+              "url": "/antistatic-bubble-bags.php",
+              "type": "page"
+            },
+            {
+              "id": "bubble-with-kraft-paper-laminated-sheet",
+              "label": "Bubble With kraft Paper Laminated Sheet",
+              "url": "/bubble-with-kraft-paper-laminated-sheet.php",
+              "type": "page"
+            },
+            {
+              "id": "3d-bubble-bags",
+              "label": "3D Bubble Bags",
+              "url": "/3d-bubble-bags.php",
+              "type": "page"
+            }
+          ]
+        },
+        {
+          "id": "epe-foam-category",
+          "label": "EPE Foam",
+          "type": "category",
+          "children": [
+            {
+              "id": "epe-sheet-and-sheet-application",
+              "label": "EPE Sheet & Sheet Application",
+              "url": "/epe-sheet-and-sheet-application.php",
+              "type": "page"
+            },
+            {
+              "id": "epe-foam-tube",
+              "label": "EPE Foam Tube",
+              "url": "/epe-foam-tube.php",
+              "type": "page"
+            },
+            {
+              "id": "epe-foam-rod",
+              "label": "EPE Foam Rod",
+              "url": "/epe-foam-rod.php",
+              "type": "page"
+            },
+            {
+              "id": "rubber-base-foam",
+              "label": "Rubber Base Foam",
+              "url": "/rubber-base-foam.php",
+              "type": "page"
+            },
+            {
+              "id": "crosslinked-foam",
+              "label": "Crosslinked Foam",
+              "url": "/crosslinked-foam.php",
+              "type": "page"
+            },
+            {
+              "id": "epdm-foam",
+              "label": "EPDM Foam",
+              "url": "/epdm-foam.php",
+              "type": "page"
+            },
+            {
+              "id": "xlpe-foam",
+              "label": "XLPE Foam",
+              "url": "/xlpe-foam.php",
+              "type": "page"
+            },
+            {
+              "id": "nitril-foam",
+              "label": "NITRIL Foam",
+              "url": "/nitril-foam.php",
+              "type": "page"
+            }
+          ]
+        },
+        {
+          "id": "stretch-film",
+          "label": "Stretch Film",
+          "url": "/stretch-film.php",
+          "type": "page"
+        },
+        {
+          "id": "bopp-tapes",
+          "label": "BOPP Tapes",
+          "url": "/bopp-tapes.php",
+          "type": "page"
+        },
+        {
+          "id": "export-packaging-items",
+          "label": "Export Packaging Items",
+          "url": "/export-packaging-items.php",
+          "type": "page"
+        },
+        {
+          "id": "industrial-chemicals",
+          "label": "Industrial Chemicals",
+          "url": "/industrial-chemicals.php",
+          "type": "page"
+        },
+        {
+          "id": "pu-foam-sheet",
+          "label": "PU Foam Sheet",
+          "url": "/pu-foam-sheet.php",
+          "type": "page"
+        },
+        {
+          "id": "epe-polyethylene-foam",
+          "label": "EPE Polyethylene Foam",
+          "url": "/epe-polyethylene-foam.php",
+          "type": "page"
+        }
+      ]
+    },
+    {
+      "id": "clients",
+      "label": "Clients",
+      "url": "/clients.php",
+      "type": "page"
+    },
+    {
+      "id": "gallery",
+      "label": "Gallery",
+      "url": "/gallery.php",
+      "type": "page"
+    },
+    {
+      "id": "contact-us",
+      "label": "Contact Us",
+      "url": "/contact-us.php",
+      "type": "page"
+    }
+  ],
+  "footerNavigation": {
+    "quickLinks": [
+      {
+        "label": "Home",
+        "url": "/"
+      },
+      {
+        "label": "About Us",
+        "url": "/about-us.php"
+      },
+      {
+        "label": "Clients",
+        "url": "/clients.php"
+      },
+      {
+        "label": "Gallery",
+        "url": "/gallery.php"
+      },
+      {
+        "label": "Contact Us",
+        "url": "/contact-us.php"
+      }
+    ],
+    "ourProducts": [
+      {
+        "label": "Air Bubble Film",
+        "url": "/air-bubble-film.php"
+      },
+      {
+        "label": "EPE Sheet",
+        "url": "/epe-sheet-and-sheet-application.php"
+      },
+      {
+        "label": "Rod (EPE Foam Rod)",
+        "url": "/epe-foam-rod.php"
+      },
+      {
+        "label": "EPE Foam Tube",
+        "url": "/epe-foam-tube.php"
+      },
+      {
+        "label": "PU Foam Sheet",
+        "url": "/pu-foam-sheet.php"
+      },
+      {
+        "label": "Crosslinked Foam",
+        "url": "/crosslinked-foam.php"
+      }
+    ],
+    "dieCastingProducts": [
+      {
+        "label": "Gravity Die Casting",
+        "type": "associated_entity_product"
+      },
+      {
+        "label": "Shell Core Casting",
+        "type": "associated_entity_product"
+      },
+      {
+        "label": "Finished Components",
+        "type": "associated_entity_product"
+      },
+      {
+        "label": "Non Ferrous Die Casting",
+        "type": "associated_entity_product"
+      },
+      {
+        "label": "Aluminum Die Casting",
+        "type": "associated_entity_product"
+      },
+      {
+        "label": "Aluminum Footrest",
+        "type": "associated_entity_product"
+      },
+      {
+        "label": "CNC Components",
+        "type": "associated_entity_product"
+      },
+      {
+        "label": "VMC Components",
+        "type": "associated_entity_product"
+      },
+      {
+        "label": "Valve Casting",
+        "type": "associated_entity_product"
+      },
+      {
+        "label": "LED Street Light Casting",
+        "type": "associated_entity_product"
+      },
+      {
+        "label": "Gearbox Casting",
+        "type": "associated_entity_product"
+      },
+      {
+        "label": "Manifold Die Casting",
+        "type": "associated_entity_product"
+      }
+    ]
+  },
+  "headerContactInfo": {
+    "phone": "+91 9921053399",
+    "email": "vishwaraj99@rediffmail.com"
+  },
+  "totalPages": 28,
+  "note": "Some product pages may have returned 404 errors during extraction (e.g., rubber-base-foam.php). URLs are based on navigation structure observed across all pages."
+}

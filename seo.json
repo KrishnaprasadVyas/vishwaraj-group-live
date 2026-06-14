@@ -1,0 +1,327 @@
+{
+  "globalSeo": {
+    "title": "Vishwaraj Polychem Private Limited - Industrial Chemicals & Protective Packaging Materials Manufacturer",
+    "description": "Vishwaraj Polychem Private Limited is a trusted leader in industrial chemicals and protective packaging materials since 1999. Specializing in PU foam, EPE foam, Air Bubble Film, Crosslinked Foam, and more. Located at Pune, Maharashtra, India.",
+    "keywords": [
+      "Vishwaraj Polychem",
+      "industrial chemicals",
+      "protective packaging materials",
+      "PU foam",
+      "EPE foam",
+      "Air Bubble Film",
+      "Crosslinked Foam",
+      "EPDM Foam",
+      "XLPE Foam",
+      "Nitril Foam",
+      "Stretch Film",
+      "BOPP Tapes",
+      "Export Packaging",
+      "foam manufacturers Pune",
+      "packaging materials manufacturer",
+      "industrial chemicals supplier",
+      "die casting components",
+      "Shreeniwas Casttech Industries"
+    ],
+    "author": "Vishwaraj Polychem Private Limited",
+    "publisher": "Vishwaraj Polychem Private Limited",
+    "language": "en-IN",
+    "region": "IN",
+    "robots": "index, follow",
+    "canonicalUrl": "https://www.vishwarajgroup.com/"
+  },
+  "openGraph": {
+    "type": "website",
+    "title": "Vishwaraj Polychem Private Limited - Industrial Chemicals & Protective Packaging Materials",
+    "description": "Trusted leader in industrial chemicals and protective packaging materials since 1999. Manufacturing PU foam, EPE foam, Air Bubble Film, Crosslinked Foam and more.",
+    "siteName": "Vishwaraj Polychem Private Limited",
+    "locale": "en_IN"
+  },
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Vishwaraj Polychem Private Limited",
+    "alternateName": [
+      "VishwaRaj Group"
+    ],
+    "url": "https://www.vishwarajgroup.com/",
+    "logo": "",
+    "foundingDate": "1999",
+    "founders": [],
+    "numberOfEmployees": "",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Gate No. 199, Behind Jyotiba Mandir, Jyotiba Nager MIDC, Talawade, Bhosari",
+      "addressLocality": "Pune",
+      "addressRegion": "Maharashtra",
+      "postalCode": "411039",
+      "addressCountry": "IN"
+    },
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": "+91-9921053399",
+        "contactType": "sales",
+        "email": "vishwaraj99@rediffmail.com"
+      },
+      {
+        "@type": "ContactPoint",
+        "telephone": "+91-8999884602",
+        "contactType": "general",
+        "email": "info@vishwarajgroup.com"
+      }
+    ],
+    "sameAs": [],
+    "makesOffer": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Air Bubble Film and related products"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "EPE Foam Products"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "PU Foam Sheet"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Industrial Chemicals"
+        }
+      }
+    ]
+  },
+  "pageSeo": [
+    {
+      "pageId": "home",
+      "url": "/",
+      "title": "Home - Vishwaraj Polychem Private Limited",
+      "description": "Welcome to Vishwaraj Polychem Private Limited, a trusted leader in industrial chemicals since 2018. We specialize in manufacturing and supplying high-quality chemicals essential for various industrial applications.",
+      "h1": "Vishwaraj Polychem Private Limited"
+    },
+    {
+      "pageId": "about-us",
+      "url": "/about-us.php",
+      "title": "About Us - Vishwaraj Polychem Private Limited",
+      "description": "Vishwaraj Polychem is professionally engaged in manufacturing of protective packaging material, located at Pune, Maharashtra, India. Incorporated in the year 1999.",
+      "h1": "About Us"
+    },
+    {
+      "pageId": "clients",
+      "url": "/clients.php",
+      "title": "Clients - Vishwaraj Polychem Private Limited",
+      "description": "Our clients trust us for quality products and reliable service.",
+      "h1": "Clients"
+    },
+    {
+      "pageId": "gallery",
+      "url": "/gallery.php",
+      "title": "Gallery - Vishwaraj Polychem Private Limited",
+      "description": "View our product gallery showcasing Air Bubble Film, Rubber Base Foam and more.",
+      "h1": "Gallery"
+    },
+    {
+      "pageId": "contact-us",
+      "url": "/contact-us.php",
+      "title": "Contact us - Vishwaraj Polychem Private Limited",
+      "description": "Get in touch with Vishwaraj Polychem Private Limited. Address: Gate No. 199, Behind Jyotiba Mandir, Jyotiba Nager MIDC, Talawade, Bhosari, Pune-411039.",
+      "h1": "Contact Us"
+    },
+    {
+      "pageId": "industrial-chemicals",
+      "url": "/industrial-chemicals.php",
+      "title": "Industrial Chemicals - Vishwaraj Polychem Private Limited",
+      "description": "Industrial chemicals play a critical role in global manufacturing. We supply acids, alkalis, solvents, and specialty compounds for pharmaceuticals, agriculture, textiles, and construction.",
+      "h1": "Industrial Chemicals"
+    },
+    {
+      "pageId": "air-bubble-film",
+      "url": "/air-bubble-film.php",
+      "title": "Air Bubble Film - Vishwaraj Polychem Private Limited",
+      "description": "Bubble Film, also called Air Bubble Film, Bubble Wrap, LDPE Air Bubble Film. Made of PE with bubble diameters 10mm, 20mm, 25mm and max width up to 2000 mm.",
+      "h1": "Air Bubble Film"
+    },
+    {
+      "pageId": "pu-foam-sheet",
+      "url": "/pu-foam-sheet.php",
+      "title": "Pu Foam Sheet - Vishwaraj Polychem Private Limited",
+      "description": "PU (Polyurethane) Foam Sheets - Self-adhesive/non-adhesive foam parts, fabric laminated foam parts, aluminium laminated foam parts, seals & Gaskets and more.",
+      "h1": "Pu Foam Sheet"
+    },
+    {
+      "pageId": "epe-sheet",
+      "url": "/epe-sheet-and-sheet-application.php",
+      "title": "EPE Sheet & Sheet Application - Vishwaraj Polychem Private Limited",
+      "description": "EPE (Expanded Polyethylene) sheets are versatile and lightweight materials with excellent cushioning, insulation, and impact resistance properties.",
+      "h1": "EPE Sheet & Sheet Application"
+    },
+    {
+      "pageId": "epe-foam-tube",
+      "url": "/epe-foam-tube.php",
+      "title": "Epe Foam Tube - Vishwaraj Polychem Private Limited",
+      "description": "EPE Foam Tubes for thermal insulation in refrigeration and AC industries with reliable performance, low water absorption and vapor permeability.",
+      "h1": "Epe Foam Tube"
+    },
+    {
+      "pageId": "crosslinked-foam",
+      "url": "/crosslinked-foam.php",
+      "title": "Crosslinked Foam - Vishwaraj Polychem Private Limited",
+      "description": "Crosslinked foam with closed cell structure for packaging, transporting and marketing objectives in cost effective way.",
+      "h1": "Crosslinked Foam"
+    },
+    {
+      "pageId": "epdm-foam",
+      "url": "/epdm-foam.php",
+      "title": "EPDM Foam - Vishwaraj Polychem Private Limited",
+      "description": "EPDM Foam made from ethylene propylene diene monomer rubber with exceptional durability, weathering resistance, ozone and UV radiation resistance.",
+      "h1": "EPDM Foam"
+    },
+    {
+      "pageId": "xlpe-foam",
+      "url": "/xlpe-foam.php",
+      "title": "XLPE FOAM - Vishwaraj Polychem Private Limited",
+      "description": "XLPE (Cross-Linked Polyethylene) foam with excellent cushioning, insulation, and impact resistance properties. Closed-cell structure for demanding environments.",
+      "h1": "XLPE Foam"
+    },
+    {
+      "pageId": "nitril-foam",
+      "url": "/nitril-foam.php",
+      "title": "NITRIL Foam - Vishwaraj Polychem Private Limited",
+      "description": "Nitrile foam composed of nitrile rubber with high resilience, durability, oil and chemical resistance, cushioning and insulation properties.",
+      "h1": "NITRIL Foam"
+    },
+    {
+      "pageId": "stretch-film",
+      "url": "/stretch-film.php",
+      "title": "Stretch Film - Vishwaraj Polychem Private Limited",
+      "description": "Stretch Film for wrapping items and pallets. Affordable way to protect pallet loads and keep items clean during transport.",
+      "h1": "Stretch Film"
+    },
+    {
+      "pageId": "bopp-tapes",
+      "url": "/bopp-tapes.php",
+      "title": "Bopp Tapes - Vishwaraj Polychem Private Limited",
+      "description": "BOPP Tapes are Biaxially Oriented Polypropylene tapes used for sealing cartons without distortion. Environment friendly and long-lasting.",
+      "h1": "Bopp Tapes"
+    },
+    {
+      "pageId": "export-packaging-items",
+      "url": "/export-packaging-items.php",
+      "title": "Export Packaging Items - Vishwaraj Polychem Private Limited",
+      "description": "Export Packaging Items for safe transportation during international shipping. Includes VCI Bags, 3D Bags, Silica Gel, PVC/PET Straps, Dunnage Bags.",
+      "h1": "Export Packaging Items"
+    },
+    {
+      "pageId": "2-layer-bubble-bags",
+      "url": "/2-layer-bubble-bags.php",
+      "title": "2 Layer Bubble Bags - Vishwaraj Polychem Private Limited",
+      "description": "2-layer bubble bags offer superior protection with durable outer layer and air-filled bubbles inner layer for shock absorption.",
+      "h1": "2 Layer Bubble Bags"
+    },
+    {
+      "pageId": "3-layer-bubble-bags",
+      "url": "/3-layer-bubble-bags.php",
+      "title": "3 Layer Bubble bags - Vishwaraj Polychem Private Limited",
+      "description": "3-layer bubble bags provide exceptional protection with puncture-resistant outer layer, air-filled middle layer and protective innermost layer.",
+      "h1": "3 Layer Bubble bags"
+    },
+    {
+      "pageId": "bubble-with-pe-foam-laminated-bags",
+      "url": "/bubble-with-pe-foam-laminated-bags.php",
+      "title": "Bubble With PE Foam Laminated Bags - Vishwaraj Polychem Private Limited",
+      "description": "Bubble with PE foam laminated bags offer superior protection and cushioning integrating bubble wrap with polyethylene foam layer.",
+      "h1": "Bubble With PE Foam Laminated Bags"
+    },
+    {
+      "pageId": "bubble-with-aluminium-film-laminated-bags-sheet",
+      "url": "/bubble-with-alluminium-film-laminated-bags-and-sheet.php",
+      "title": "Bubble With Alluminium Film Laminated Bags & Sheet - Vishwaraj Polychem Private Limited",
+      "description": "Bubble with aluminum film laminated bags and sheets offer robust protection from physical damage and environmental factors.",
+      "h1": "Bubble With Alluminium Film Laminated Bags & Sheet"
+    },
+    {
+      "pageId": "antistatic-bubble-bags",
+      "url": "/antistatic-bubble-bags.php",
+      "title": "Antistatic Bubble Bags - Vishwaraj Polychem Private Limited",
+      "description": "Antistatic bubble bags protect sensitive electronic components from static electricity with antistatic material and cushioning bubbles.",
+      "h1": "Antistatic Bubble Bags"
+    },
+    {
+      "pageId": "bubble-with-kraft-paper-laminated-sheet",
+      "url": "/bubble-with-kraft-paper-laminated-sheet.php",
+      "title": "Bubble With kraft Paper Laminated Sheet - Vishwaraj Polychem Private Limited",
+      "description": "Bubble with kraft paper laminated sheets combine cushioning benefits of bubble wrap with strength and durability of kraft paper.",
+      "h1": "Bubble With kraft Paper Laminated Sheet"
+    },
+    {
+      "pageId": "3d-bubble-bags",
+      "url": "/3d-bubble-bags.php",
+      "title": "3d Bubble Bags - Vishwaraj Polychem Private Limited",
+      "description": "3D bubble bags feature three-dimensional bubble cushioning for superior shock absorption and full surface protection.",
+      "h1": "3D Bubble Bags"
+    },
+    {
+      "pageId": "epe-foam-rod",
+      "url": "/epe-foam-rod.php",
+      "title": "EPE Foam Rod - Vishwaraj Polychem Private Limited",
+      "description": "EPE Foam Rods are versatile, lightweight components offering excellent cushioning, insulation, and impact resistance.",
+      "h1": "EPE Foam Rod"
+    },
+    {
+      "pageId": "epe-polyethylene-foam",
+      "url": "/epe-polyethylene-foam.php",
+      "title": "Epe Text - Vishwaraj Polychem Private Limited",
+      "description": "EPE Foam is a superior insulating material with extremely low thermal conductivity and moisture absorbent properties. Temperature range: -40°C to 70°C.",
+      "h1": "EPE Polyethylene Foam"
+    },
+    {
+      "pageId": "epe-sheet-rolls",
+      "url": "/epe-sheet-rolles-and-sheet-applications.php",
+      "title": "EPE Sheet Rolles & Sheet Applications - Vishwaraj Polychem Private Limited",
+      "description": "EPE Sheet Rolls And Sheet Application for packaging solutions, consumer durables, automobile components and more.",
+      "h1": "EPE Sheet Rolls And Sheet Application"
+    }
+  ],
+  "footerSeo": {
+    "copyright": "Copyright © 2024 Vishwaraj Polychem Private Limited All Rights Reserved.",
+    "developerCredit": "Designed & Developed By",
+    "tagline": "Quality Products"
+  },
+  "localBusinessSEO": {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Vishwaraj Polychem Private Limited",
+    "image": "",
+    "telephone": "+91-9921053399",
+    "email": "vishwaraj99@rediffmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Gate No. 199, Behind Jyotiba Mandir, Jyotiba Nager MIDC, Talawade, Bhosari",
+      "addressLocality": "Pune",
+      "addressRegion": "Maharashtra",
+      "postalCode": "411039",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "",
+      "longitude": ""
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "India"
+    },
+    "priceRange": "$$"
+  }
+}

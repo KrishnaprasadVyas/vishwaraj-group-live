@@ -1,0 +1,58 @@
+{
+  "companyName": "Vishwaraj Polychem Private Limited",
+  "alternateNames": ["VishwaRaj Group"],
+  "associatedEntities": [
+    {
+      "name": "Shreeniwas Casttech Industries",
+      "location": "Chakan, Pune, Maharashtra, India"
+    }
+  ],
+  "establishedYear": 1999,
+  "incorporationYear": 2018,
+  "companyType": "Private Limited Company",
+  "registrationDetails": {
+    "cin": "U74999PN2018PTC177294"
+  },
+  "headquarters": {
+    "city": "Pune",
+    "state": "Maharashtra",
+    "country": "India"
+  },
+  "description": "Vishwaraj Polychem Private Limited is a trusted leader in industrial chemicals and protective packaging materials since 1999. We specialize in manufacturing and supplying a diverse range of high-quality chemicals essential for various industrial applications. Our commitment to excellence is reflected in our rigorous quality standards, state-of-the-art manufacturing facilities, and a dedicated team of experts.",
+  "aboutUs": {
+    "fullText": "Vishwaraj Polychem is professionally engaged in manufacturing of protective packaging material, located at Pune, Maharashtra, India. Incorporated in the year 1999, we manufacture packaging materials developed from quality foam. We are one of the reputed manufacturer, supplier & service provider of our wide range of foam products categorized as PU foam, EPE foam, Air Bubble Film and Pouches, Crosslinked Foam. We intend to render safe packaging to computer, automotive, pharmaceutical, home appliances and telecommunication equipment, Genset etc. The company has set up a robust infrastructure with advanced technological tools to develop precise range of foam composite materials. Through rigorous manufacturing process, we acquire flexible yet sturdy structure of foam which is utilized to safeguard the product against all odds. Due to strong manufacturing capabilities, we are placed among the renowned die cut fabric manufacturers. We have well integrated marketing and distribution team to make our products available in every nook and corner of the world. Our very effective marketing strategies and distribution facilities enable us to personally connect with our customers and serve each product desired by them.",
+    "keyStrengths": [
+      "High quality aluminum",
+      "Economical and best prices in the industry",
+      "Prompt delivery of services",
+      "Rigorous quality standards",
+      "Extensive industry experience",
+      "Innovative solutions tailored to client needs",
+      "Customer-centric personalized service",
+      "Sustainable practices and eco-friendly products"
+    ]
+  },
+  "vision": [
+    "To be a reliable supplier for the clients by offering them technically superior and commercially viable products, which not only meet but also exceed our client's expectations.",
+    "To upgrade the technology regularly and implement quality management systems.",
+    "To emphasize on the overall growth of the employees with the growth of the company.",
+    "To increase the market focus from automotive sectors to allied services such as white goods, telecom etc."
+  ],
+  "qualityPolicy": {
+    "statement": "At Vishwaraj Polychem Private Limited, we are committed to delivering exceptional quality in every product and service we offer. Our Quality Policy is anchored on the following principles: Trusted By The World's Best Organizations.",
+    "principles": [
+      "Proven Quality",
+      "Expertise and Innovation",
+      "Customer-Centric Service",
+      "Sustainability Focus"
+    ]
+  },
+  "resources": {
+    "description": "At Vishwaraj Polychem Private Limited, we believe in empowering our clients with knowledge and support to enhance their operations. Our resources section provides valuable insights and technical data."
+  },
+  "yearsOfExperience": "00+ Years Of Experience",
+  "keyPersonnel": {
+    "kmpCount": 2,
+    "note": "2 Key Management Personnel have been associated with the company since its inception"
+  }
+}

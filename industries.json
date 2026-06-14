@@ -1,0 +1,274 @@
+{
+  "industriesServed": [
+    {
+      "industry": "Automotive",
+      "applications": [
+        "Automobile spare parts packaging",
+        "Carpet underlays",
+        "Gaskets",
+        "Seat cushion inserts",
+        "Door liners",
+        "Side/roof panels",
+        "Transit packing of vehicles",
+        "2-wheelers steering wheel covers",
+        "Windshield covers",
+        "Die-punch wheel arch pads",
+        "Gearbox casting components",
+        "Manifold die casting",
+        "Aluminum footrests"
+      ],
+      "products": [
+        "Air Bubble Film",
+        "EPE Foam Tubes",
+        "PU Foam Sheets",
+        "Crosslinked Foam",
+        "EPDM Foam",
+        "XLPE Foam",
+        "Nitril Foam",
+        "Stretch Film",
+        "BOPP Tapes"
+      ]
+    },
+    {
+      "industry": "Electronics & Electricals",
+      "applications": [
+        "Electronic components packaging",
+        "Circuit board protection",
+        "Static-sensitive items handling",
+        "LCD/LED packaging",
+        "TV covers",
+        "Electric components cleaning"
+      ],
+      "products": [
+        "Antistatic Bubble Bags",
+        "Air Bubble Film",
+        "EPE Foam Sheets",
+        "PU Foam Sheets",
+        "Stretch Film"
+      ]
+    },
+    {
+      "industry": "Pharmaceuticals",
+      "applications": [
+        "Temperature-sensitive storage areas",
+        "Pharmaceutical product protection",
+        "Industrial chemicals supply"
+      ],
+      "products": [
+        "Air Bubble Film",
+        "Bubble with Aluminium Film Laminated Bags & Sheet",
+        "Industrial Chemicals"
+      ]
+    },
+    {
+      "industry": "Home Appliances",
+      "applications": [
+        "Refrigerator packaging",
+        "Washing machine components",
+        "White goods packaging",
+        "Consumer durables protection"
+      ],
+      "products": [
+        "EPE Foam Sheets & Rolls",
+        "PU Foam Sheets",
+        "Stretch Film"
+      ]
+    },
+    {
+      "industry": "Telecommunications",
+      "applications": [
+        "Telecom equipment packaging",
+        "Equipment protection during transit"
+      ],
+      "products": [
+        "Air Bubble Film",
+        "EPE Foam Products"
+      ]
+    },
+    {
+      "industry": "Construction",
+      "applications": [
+        "Insulation purposes",
+        "Expansion joint filler",
+        "Building & constructions foam parts",
+        "Door insulation",
+        "Roof sealing"
+      ],
+      "products": [
+        "EPE Foam Sheets",
+        "XLPE Foam",
+        "PU Foam Sheets",
+        "Crosslinked Foam"
+      ]
+    },
+    {
+      "industry": "Packaging & Shipping",
+      "applications": [
+        "Export packaging",
+        "Pallet packing",
+        "Warehouse storage",
+        "Corrugated boxes packing",
+        "Food wrapping",
+        "Big machines packing"
+      ],
+      "products": [
+        "Air Bubble Film",
+        "Stretch Film",
+        "BOPP Tapes",
+        "Export Packaging Items (VCI Bags, 3D Bags, Silica Gel, PVC/PET Straps, Dunnage Bags)"
+      ]
+    },
+    {
+      "industry": "Food & Beverage",
+      "applications": [
+        "Food wrapping",
+        "Packing food items on pallets"
+      ],
+      "products": [
+        "Stretch Film"
+      ]
+    },
+    {
+      "industry": "Agriculture",
+      "applications": [
+        "Industrial chemicals supply for agricultural applications"
+      ],
+      "products": [
+        "Industrial Chemicals (Acids, Alkalis, Solvents)"
+      ]
+    },
+    {
+      "industry": "Textiles",
+      "applications": [
+        "Industrial chemicals for textile processing"
+      ],
+      "products": [
+        "Industrial Chemicals"
+      ]
+    },
+    {
+      "industry": "Furniture & Bedding",
+      "applications": [
+        "Furniture packaging",
+        "Handicrafts products protection",
+        "Foam parts for furniture and bedding"
+      ],
+      "products": [
+        "Air Bubble Film",
+        "PU Foam Sheets"
+      ]
+    },
+    {
+      "industry": "Glassware & Ceramics",
+      "applications": [
+        "Fragile glassware protection",
+        "Ceramic products packaging"
+      ],
+      "products": [
+        "Air Bubble Film",
+        "2 Layer/3 Layer Bubble Bags",
+        "Bubble with Kraft Paper Laminated Sheet"
+      ]
+    },
+    {
+      "industry": "Refrigeration & AC",
+      "applications": [
+        "Thermal insulation for refrigeration and AC industries",
+        "Piping systems protection for AC"
+      ],
+      "products": [
+        "EPE Foam Tubes",
+        "XLPE Foam (Heating & Refrigeration pipes)"
+      ]
+    },
+    {
+      "industry": "HVAC Systems",
+      "applications": [
+        "Sealing material",
+        "Vibration dampener",
+        "Thermal insulator",
+        "Air duct & pipe insulation"
+      ],
+      "products": [
+        "Nitril Foam",
+        "XLPE Foam"
+      ]
+    },
+    {
+      "industry": "Architecture & Interior Design",
+      "applications": [
+        "Foam parts for architectural applications",
+        "Interior design materials"
+      ],
+      "products": [
+        "PU Foam Sheets"
+      ]
+    },
+    {
+      "industry": "Machinery & Foundry",
+      "applications": [
+        "Machinery components packaging",
+        "Foundry applications"
+      ],
+      "products": [
+        "Air Bubble Film",
+        "PU Foam Sheets (Heat shields/Thermal Jackets)"
+      ]
+    },
+    {
+      "industry": "Generator & Canopy",
+      "applications": [
+        "Generator canopy insulation and protection"
+      ],
+      "products": [
+        "PU Foam Sheets"
+      ]
+    },
+    {
+      "industry": "Dairy Industries",
+      "applications": [
+        "Chemicals for dairy processing"
+      ],
+      "products": [
+        "Dairy Industries Chemicals"
+      ]
+    },
+    {
+      "industry": "Water Treatment (ETP/RO Plants)",
+      "applications": [
+        "Chemicals for Effluent Treatment Plants",
+        "Chemicals and spares for Reverse Osmosis Plants"
+      ],
+      "products": [
+        "ETP Plants Chemicals",
+        "RO Plants Chemicals & Spares"
+      ]
+    },
+    {
+      "industry": "Cooling Tower Systems",
+      "applications": [
+        "Chemicals for cooling tower maintenance and treatment"
+      ],
+      "products": [
+        "Cooling Tower Plant Chemicals"
+      ]
+    },
+    {
+      "industry": "LED Street Lighting",
+      "applications": [
+        "LED street light housing and components casting"
+      ],
+      "products": [
+        "LED Street Light Casting (Die Casting)"
+      ]
+    }
+  ],
+  "totalIndustriesServed": 20,
+  "keyIndustryFocus": [
+    "Automotive",
+    "Electronics & Electricals",
+    "Home Appliances",
+    "Packaging & Shipping",
+    "Construction"
+  ]
+}
