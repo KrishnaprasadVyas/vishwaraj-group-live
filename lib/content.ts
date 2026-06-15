@@ -189,11 +189,11 @@ export function getProductImage(slug: string, categorySlug?: string): string {
     case "bubble-with-aluminium-film-laminated-bags-sheet":
       return "/images/bubble-reflective-texture.png";
     case "antistatic-bubble-bags":
-      return "/images/p12.png";
+      return "/images/bubble-reflective-texture.png";
     case "bubble-with-kraft-paper-laminated-sheet":
-      return "/images/p13.png";
+      return "/images/p2.png";
     case "3d-bubble-bags":
-      return "/images/p3.png";
+      return "/images/vproduct3.jpg";
 
     case "epe-sheet-and-sheet-application":
       return "/images/epe-foam-texture.png";
@@ -207,15 +207,15 @@ export function getProductImage(slug: string, categorySlug?: string): string {
       return "/images/epe-foam-texture.png";
 
     case "pu-foam-sheet":
-      return "/images/epe-foam-texture.png";
+      return "/images/epe_11.png"; // foam packaging trays
     case "crosslinked-foam":
-      return "/images/epe-foam-texture.png";
+      return "/images/p3.png"; // grey die-cut foam insert
     case "epdm-foam":
-      return "/images/epe-foam-texture.png";
+      return "/images/p2.png"; // dark grey rubber/EPDM foam roll
     case "xlpe-foam":
-      return "/images/epe-foam-texture.png";
+      return "/images/vproduct3.jpg"; // coloured foam tubes
     case "nitril-foam":
-      return "/images/epe-foam-texture.png";
+      return "/images/vproduct1.jpg"; // foam rolls & profiles
 
     case "stretch-film":
       return "/images/vproduct1.jpg";
@@ -228,25 +228,35 @@ export function getProductImage(slug: string, categorySlug?: string): string {
       return "/images/bubble-reflective-texture.png";
 
     case "gravity-die-casting":
-    case "shell-core-casting":
-    case "finished-components":
     case "non-ferrous-die-casting":
     case "aluminum-die-casting":
+    case "finished-components":
+      return "/images/vproduct2.jpg";
+    case "shell-core-casting":
     case "aluminum-footrest":
     case "cnc-components":
     case "vmc-components":
+      return "/images/vproduct1.jpg";
     case "valve-casting":
     case "led-street-light-casting":
     case "gearbox-casting":
     case "manifold-die-casting":
-      return "/images/vproduct2.jpg";
+      return "/images/vproduct3.jpg";
 
     default:
       if (categorySlug === "air-bubble-film") {
         return "/images/bubble-wrap-texture.png";
       } else if (categorySlug === "epe-foam") {
         return "/images/epe-foam-texture.png";
+      } else if (
+        categorySlug === "pu-foam" ||
+        categorySlug === "crosslinked-foam" ||
+        categorySlug === "epdm-foam" ||
+        categorySlug === "xlpe-foam" ||
+        categorySlug === "nitril-foam"
+      ) {
+        return "/images/epe_11.png";
       }
-      return "/images/epe-foam-texture.png";
+      return "/images/bubble-wrap-texture.png"; // generic fallback
   }
 }
