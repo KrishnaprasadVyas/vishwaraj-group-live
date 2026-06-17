@@ -70,6 +70,7 @@ export const footerLinks = [
   { label: "About", href: "/about" },
   { label: "Products", href: "/products" },
   { label: "Industries", href: "/industries" },
+  { label: "Clients", href: "/clients" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -196,7 +197,7 @@ export function getProductImage(slug: string, categorySlug?: string): string {
       return "/images/vproduct3.jpg";
 
     case "epe-sheet-and-sheet-application":
-      return "/images/epe-foam-texture.png";
+      return "/images/epe-sheet-stack.png";
     case "epe-sheet-rolls-and-sheet-applications":
       return "/images/epe_11.png";
     case "epe-foam-tube":
@@ -204,7 +205,7 @@ export function getProductImage(slug: string, categorySlug?: string): string {
     case "epe-foam-rod":
       return "/images/vproduct2.jpg";
     case "epe-polyethylene-foam":
-      return "/images/epe-foam-texture.png";
+      return "/images/epe-sheet-stack.png";
 
     case "pu-foam-sheet":
       return "/images/epe_11.png"; // foam packaging trays
@@ -247,7 +248,7 @@ export function getProductImage(slug: string, categorySlug?: string): string {
       if (categorySlug === "air-bubble-film") {
         return "/images/bubble-wrap-texture.png";
       } else if (categorySlug === "epe-foam") {
-        return "/images/epe-foam-texture.png";
+        return "/images/epe-sheet-stack.png";
       } else if (
         categorySlug === "pu-foam" ||
         categorySlug === "crosslinked-foam" ||

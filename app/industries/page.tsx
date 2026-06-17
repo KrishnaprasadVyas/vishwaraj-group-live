@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-import { ArrowUpRight, Factory, Package, ChevronRight } from "lucide-react";
+import { ArrowUpRight, Factory, Package, ChevronRight, ArrowRight } from "lucide-react";
 
 import { Reveal } from "@/components/reveal";
 import { industries } from "@/lib/content";
@@ -16,24 +16,26 @@ export default function IndustriesPage() {
   return (
     <div className="relative min-h-screen">
       {/* ── Hero ─────────────────────────────────────────────── */}
-      <section className="relative overflow-hidden bg-[#F8F9FA] pt-36 pb-20 px-6 lg:px-12 border-b border-border">
-        <div className="mx-auto max-w-7xl">
+      <section className="relative overflow-hidden bg-primary pt-[96px] pb-10 px-6 lg:px-12 border-b border-white/10 flex items-center min-h-[300px]">
+        <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 bg-gradient-to-b from-primary via-primary/80 to-primary/95"></div>
+          <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)]"></div>
+        </div>
+
+        <div className="mx-auto max-w-7xl relative z-10 w-full text-center">
           <Reveal>
-            <div className="text-xs font-semibold tracking-[0.25em] text-[#F97316] uppercase font-mono mb-6">
+            <div className="text-xs font-semibold tracking-[0.25em] text-accent uppercase font-mono mb-4">
               Sectors We Serve
             </div>
           </Reveal>
-          <Reveal delay={0.06}>
-            <h1 className="massive-text text-primary leading-[0.88]">
-              <span>INDUSTRIAL</span>
-              <br />
-              <span className="opacity-30">REACH.</span>
+          <Reveal delay={0.1}>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 tracking-tight">
+              Industrial Reach.
             </h1>
           </Reveal>
-          <Reveal delay={0.18}>
-            <p className="mt-8 max-w-2xl text-xl leading-9 text-secondary">
-              From automotive spare parts to pharmaceutical cold-chain logistics — our
-              packaging solutions are field-tested across {industries.length} demanding sectors.
+          <Reveal delay={0.2}>
+            <p className="max-w-2xl mx-auto text-lg leading-relaxed text-zinc-300">
+              From automotive spare parts to pharmaceutical cold-chain logistics — our packaging solutions are field-tested across {industries.length} demanding sectors.
             </p>
           </Reveal>
         </div>
@@ -60,61 +62,63 @@ export default function IndustriesPage() {
               <Reveal key={industry.slug} delay={index * 0.035}>
                 <article
                   id={industry.slug}
-                  className="group relative h-full rounded-[2rem] border border-border bg-white p-7 shadow-[0_18px_46px_rgba(17,24,39,0.04)] hover:border-[rgba(249,115,22,0.35)] hover:shadow-[0_24px_60px_rgba(17,24,39,0.08)] hover:-translate-y-0.5 transition-all duration-300"
+                  className="group relative h-full flex flex-col rounded-[1.5rem] border border-border bg-white p-6 transition-all duration-300 hover:-translate-y-0.5 hover:border-[rgba(249,115,22,0.35)] hover:shadow-[0_18px_40px_rgba(17,24,39,0.05)]"
                 >
                   {/* Header row */}
                   <div className="flex items-start justify-between gap-4 mb-6">
                     <div>
-                      <div className="text-[10px] font-semibold tracking-[0.22em] text-secondary uppercase font-mono">
+                      <div className="text-[10px] font-semibold tracking-[0.22em] text-secondary uppercase font-mono mb-2">
                         Industry
                       </div>
-                      <h2 className="mt-2 text-2xl font-bold text-primary group-hover:text-[#F97316] transition-colors duration-300">
+                      <h2 className="text-2xl font-bold text-primary group-hover:text-accent transition-colors duration-300">
                         {industry.industry}
                       </h2>
                     </div>
-                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-[rgba(249,115,22,0.08)] text-[#F97316] group-hover:bg-[#F97316] group-hover:text-white transition-all duration-300">
-                      <Factory className="h-5 w-5" />
+                    <div className="w-12 h-12 rounded-full bg-[#F8F9FA] flex items-center justify-center border border-border group-hover:bg-accent/10 group-hover:border-accent/20 transition-colors shrink-0">
+                      <Factory className="h-5 w-5 text-secondary group-hover:text-accent transition-colors" />
                     </div>
                   </div>
 
-                  {/* Applications */}
-                  {industry.applications.length > 0 && (
-                    <div className="mb-4 rounded-2xl border border-border bg-[#F8F9FA] p-4">
-                      <div className="text-[10px] font-semibold tracking-[0.18em] text-secondary uppercase font-mono mb-3">
-                        Applications
+                  <div className="flex-1 flex flex-col gap-4">
+                    {/* Applications */}
+                    {industry.applications.length > 0 && (
+                      <div className="rounded-2xl border border-border bg-[#F8F9FA] p-4 flex-1">
+                        <div className="text-[10px] font-semibold tracking-[0.18em] text-secondary uppercase font-mono mb-3">
+                          Applications
+                        </div>
+                        <div className="flex flex-wrap gap-1.5">
+                          {industry.applications.map((application) => (
+                            <span
+                              key={application}
+                              className="rounded-full border border-border bg-white px-3 py-1 text-xs font-medium text-secondary"
+                            >
+                              {application}
+                            </span>
+                          ))}
+                        </div>
                       </div>
-                      <div className="flex flex-wrap gap-1.5">
-                        {industry.applications.map((application) => (
-                          <span
-                            key={application}
-                            className="rounded-full border border-border bg-white px-3 py-1 text-xs font-medium text-secondary"
-                          >
-                            {application}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                  )}
+                    )}
 
-                  {/* Products */}
-                  {industry.products.length > 0 && (
-                    <div className="rounded-2xl border border-border bg-[#F8F9FA] p-4">
-                      <div className="text-[10px] font-semibold tracking-[0.18em] text-secondary uppercase font-mono mb-3">
-                        Products Used
+                    {/* Products */}
+                    {industry.products.length > 0 && (
+                      <div className="rounded-2xl border border-border bg-white p-4 shadow-sm flex-1">
+                        <div className="text-[10px] font-semibold tracking-[0.18em] text-secondary uppercase font-mono mb-3">
+                          Products Used
+                        </div>
+                        <div className="flex flex-wrap gap-1.5">
+                          {industry.products.map((product) => (
+                            <span
+                              key={product}
+                              className="inline-flex items-center gap-1.5 rounded-full bg-[#F8F9FA] border border-border px-3 py-1 text-xs font-medium text-secondary"
+                            >
+                              <Package className="h-3 w-3 text-accent" />
+                              {product}
+                            </span>
+                          ))}
+                        </div>
                       </div>
-                      <div className="flex flex-wrap gap-1.5">
-                        {industry.products.map((product) => (
-                          <span
-                            key={product}
-                            className="inline-flex items-center gap-1.5 rounded-full bg-white border border-border px-3 py-1 text-xs font-medium text-primary shadow-sm"
-                          >
-                            <Package className="h-3 w-3 text-[#F97316]" />
-                            {product}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                  )}
+                    )}
+                  </div>
 
                   {/* Bottom CTA */}
                   <div className="mt-5 flex items-center gap-1.5 text-[10px] font-bold tracking-[0.18em] text-secondary uppercase font-mono group-hover:text-[#F97316] transition-colors">
@@ -129,30 +133,27 @@ export default function IndustriesPage() {
       </section>
 
       {/* ── CTA Banner ────────────────────────────────────────── */}
-      <section className="py-20 px-6 lg:px-12 bg-[#F3F4F6] border-t border-border">
-        <div className="mx-auto max-w-7xl">
+      <section className="py-20 sm:py-24 bg-graphite relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,90,0,0.15),transparent_60%)]"></div>
+        <div className="container-shell relative z-10 text-center">
           <Reveal>
-            <div className="rounded-[2.5rem] bg-[#111827] text-white p-12 lg:p-20 shadow-2xl relative overflow-hidden flex flex-col lg:flex-row lg:items-center lg:justify-between gap-10">
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(249,115,22,0.12),_transparent_45%)] pointer-events-none" />
-              <div className="max-w-2xl relative z-10">
-                <div className="text-xs font-semibold tracking-[0.25em] text-[#F97316] uppercase font-mono">
-                  Need industry-specific packaging?
-                </div>
-                <h3 className="mt-4 text-4xl font-extrabold tracking-tight text-white sm:text-5xl leading-tight">
-                  Let's engineer the right solution.
-                </h3>
-                <p className="mt-5 text-lg leading-8 text-zinc-400">
-                  Our team can develop application-specific foam conversion and barrier packaging tailored to your industrial tolerances.
-                </p>
-              </div>
-              <Link
-                href="/contact"
-                className="relative z-10 inline-flex items-center gap-2 justify-center rounded-full bg-[#F97316] px-8 py-4.5 text-sm font-semibold text-white shadow-[0_18px_34px_rgba(249,115,22,0.35)] transition-all duration-300 hover:bg-white hover:text-black hover:-translate-y-0.5 shrink-0"
-              >
-                Request Quote
-                <ArrowUpRight className="h-4 w-4" />
-              </Link>
+            <div className="inline-flex h-16 w-16 items-center justify-center rounded-full bg-accent/10 mb-8">
+              <ArrowUpRight className="h-8 w-8 text-accent" />
             </div>
+            <h2 className="display-l text-white mb-6">
+              Ready to Upgrade Your Supply Chain?
+            </h2>
+            <p className="body-large text-zinc-400 mb-12 max-w-2xl mx-auto">
+              Partner with an enterprise-grade manufacturer capable of scaling to your most demanding requirements.
+              Schedule a technical consultation with our engineering team today.
+            </p>
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center gap-3 bg-accent text-white font-bold text-sm tracking-[0.15em] px-12 py-6 hover:bg-white hover:text-primary transition-all duration-300 rounded-full uppercase premium-shadow magnetic-hover"
+            >
+              Request Enterprise Quote
+              <ArrowRight className="h-5 w-5" />
+            </Link>
           </Reveal>
         </div>
       </section>

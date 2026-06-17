@@ -11,7 +11,7 @@ export function SiteFooter() {
   const secondaryEmail = cleanContactDetails.emails?.[1];
 
   return (
-    <footer className="border-t border-border bg-[#111827] text-white">
+    <footer className="border-t border-white/10 bg-primary text-white">
       <div className="mx-auto w-full max-w-7xl px-6 py-16 sm:px-8 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-[1.5fr_1fr_1fr_1fr]">
 
@@ -43,25 +43,25 @@ export function SiteFooter() {
             <div className="grid gap-3 text-sm text-zinc-400">
               {primaryAddress && (
                 <div className="flex gap-3 items-start">
-                  <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-[#F97316]" />
+                  <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
                   <span className="leading-6">{primaryAddress.fullAddress}</span>
                 </div>
               )}
               {primaryPhone && (
                 <a href={`tel:${primaryPhone.number}`} className="flex gap-3 items-center hover:text-white transition-colors">
-                  <Phone className="h-4 w-4 shrink-0 text-[#F97316]" />
+                  <Phone className="h-4 w-4 shrink-0 text-accent" />
                   <span>{primaryPhone.formatted ?? primaryPhone.number}</span>
                 </a>
               )}
               {primaryEmail && (
                 <a href={`mailto:${primaryEmail.email}`} className="flex gap-3 items-center hover:text-white transition-colors">
-                  <Mail className="h-4 w-4 shrink-0 text-[#F97316]" />
+                  <Mail className="h-4 w-4 shrink-0 text-accent" />
                   <span>{primaryEmail.email}</span>
                 </a>
               )}
               {secondaryEmail && (
                 <a href={`mailto:${secondaryEmail.email}`} className="flex gap-3 items-center hover:text-white transition-colors">
-                  <Mail className="h-4 w-4 shrink-0 text-[#F97316]" />
+                  <Mail className="h-4 w-4 shrink-0 text-accent" />
                   <span>{secondaryEmail.email}</span>
                 </a>
               )}
@@ -109,7 +109,7 @@ export function SiteFooter() {
               </p>
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 rounded-full bg-[#F97316] px-5 py-2.5 text-xs font-bold tracking-wider text-white uppercase shadow-[0_10px_24px_rgba(249,115,22,0.3)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_14px_28px_rgba(249,115,22,0.38)]"
+                className="inline-flex items-center gap-2 rounded-full bg-accent px-5 py-2.5 text-xs font-bold tracking-wider text-white uppercase shadow-[0_10px_24px_rgba(224,90,0,0.3)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_14px_28px_rgba(224,90,0,0.38)] magnetic-hover"
               >
                 Request Quote
                 <ArrowUpRight className="h-3.5 w-3.5" />

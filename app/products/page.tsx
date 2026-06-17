@@ -23,52 +23,27 @@ export default function ProductsPage() {
   return (
     <div className="relative min-h-screen">
       {/* ── Hero ─────────────────────────────────────────────── */}
-      <section className="relative overflow-hidden bg-[#F8F9FA] pt-36 pb-20 px-6 lg:px-12 border-b border-border">
-        <div className="mx-auto max-w-7xl grid gap-12 lg:grid-cols-[0.55fr_0.45fr] items-end">
-          <div>
-            <Reveal>
-              <div className="text-xs font-semibold tracking-[0.25em] text-[#F97316] uppercase font-mono mb-6">
-                Product Catalog
-              </div>
-            </Reveal>
-            <Reveal delay={0.06}>
-              <h1 className="massive-text text-primary leading-[0.88]">
-                <span>PRECISION</span>
-                <br />
-                <span className="opacity-30">PROTECTION.</span>
-              </h1>
-            </Reveal>
-            <Reveal delay={0.18}>
-              <p className="mt-8 max-w-xl text-xl leading-9 text-secondary">
-                {allProducts.length}+ products spanning EPE foam, bubble film, technical rubber
-                foam, stretch film, and industrial chemicals — all manufactured at our Pune MIDC facility.
-              </p>
-            </Reveal>
-          </div>
+      <section className="relative overflow-hidden bg-primary pt-[96px] pb-10 px-6 lg:px-12 border-b border-white/10 flex items-center min-h-[300px]">
+        <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 bg-gradient-to-b from-primary via-primary/80 to-primary/95"></div>
+          <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)]"></div>
+        </div>
 
-          {/* Feature image mosaic */}
-          <Reveal delay={0.2} className="hidden lg:grid grid-cols-2 gap-3">
-            {topProducts.map((product, i) => {
-              const img = getProductImage(product.slug, product.categorySlug);
-              return (
-                <div
-                  key={product.slug}
-                  className={`relative overflow-hidden rounded-2xl border border-border bg-[#F3F4F6] ${i === 0 ? "aspect-square" : "aspect-[4/3]"} shadow-sm`}
-                >
-                  <Image
-                    src={img}
-                    alt={product.name}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 1024px) 0px, 200px"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
-                  <div className="absolute bottom-2 left-2 text-[9px] font-bold tracking-widest text-white uppercase font-mono leading-tight">
-                    {product.name}
-                  </div>
-                </div>
-              );
-            })}
+        <div className="mx-auto max-w-7xl relative z-10 w-full text-center">
+          <Reveal>
+            <div className="text-xs font-semibold tracking-[0.25em] text-accent uppercase font-mono mb-4">
+              Product Catalog
+            </div>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 tracking-tight">
+              Precision Protection.
+            </h1>
+          </Reveal>
+          <Reveal delay={0.2}>
+            <p className="max-w-2xl mx-auto text-lg leading-relaxed text-zinc-300">
+              {allProducts.length}+ products spanning EPE foam, bubble film, technical rubber foam, stretch film, and industrial chemicals — all manufactured at our Pune MIDC facility.
+            </p>
           </Reveal>
         </div>
       </section>
@@ -91,16 +66,16 @@ export default function ProductsPage() {
       </section>
 
       {/* ── All Product Groups ────────────────────────────────── */}
-      <section className="py-16 px-6 lg:px-12 bg-white">
-        <div className="mx-auto max-w-7xl grid gap-14">
+      <section className="py-10 px-6 lg:px-12 bg-white">
+        <div className="mx-auto max-w-7xl grid gap-10">
           {productGroups.map((group, groupIndex) => (
             <Reveal key={group.slug} delay={groupIndex * 0.03}>
               <section
                 id={group.slug}
-                className="scroll-mt-28 rounded-[2.5rem] border border-border bg-white p-7 shadow-[0_20px_56px_rgba(17,24,39,0.03)] sm:p-10"
+                className="scroll-mt-28 rounded-[2.5rem] border border-border bg-white p-6 sm:p-8 shadow-[0_20px_56px_rgba(17,24,39,0.03)]"
               >
                 {/* Category header */}
-                <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between pb-7 mb-8 border-b border-border">
+                <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between pb-5 mb-6 border-b border-border">
                   <div>
                     <div className="text-[10px] font-semibold tracking-[0.22em] text-secondary uppercase font-mono">
                       Category
@@ -124,14 +99,14 @@ export default function ProductsPage() {
                 </div>
 
                 {/* Products */}
-                <div className="grid gap-5 md:grid-cols-2">
+                <div className="grid gap-4 md:grid-cols-2">
                   {group.products.map((product) => {
                     const productImage = getProductImage(product.slug, group.slug);
                     return (
                       <Link
                         key={product.slug}
                         href={`/products/${product.slug}`}
-                        className="group flex flex-col sm:flex-row gap-5 rounded-[1.75rem] border border-border bg-white p-5 transition-all duration-300 hover:-translate-y-0.5 hover:border-[rgba(249,115,22,0.35)] hover:shadow-[0_18px_40px_rgba(17,24,39,0.05)]"
+                        className="group flex flex-col sm:flex-row gap-4 rounded-[1.5rem] border border-border bg-white p-4 transition-all duration-300 hover:-translate-y-0.5 hover:border-[rgba(249,115,22,0.35)] hover:shadow-[0_18px_40px_rgba(17,24,39,0.05)]"
                       >
                         <div className="relative shrink-0 overflow-hidden rounded-2xl border border-border bg-[#F3F4F6] aspect-[4/3] w-full sm:w-36 h-28">
                           <Image
@@ -179,32 +154,28 @@ export default function ProductsPage() {
         </div>
       </section>
 
-      {/* ── CTA ──────────────────────────────────────────────── */}
-      <section className="py-16 px-6 lg:px-12 bg-[#F3F4F6] border-t border-border">
-        <div className="mx-auto max-w-7xl">
+      {/* ── Final CTA ──────────────────────────────────────────────── */}
+      <section className="py-20 sm:py-24 bg-graphite relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,90,0,0.15),transparent_60%)]"></div>
+        <div className="container-shell relative z-10 text-center">
           <Reveal>
-            <div className="rounded-[2.5rem] bg-[#111827] text-white p-12 lg:p-20 shadow-2xl relative overflow-hidden flex flex-col lg:flex-row lg:items-center lg:justify-between gap-10">
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(249,115,22,0.12),_transparent_45%)] pointer-events-none" />
-              <div className="max-w-xl relative z-10">
-                <div className="text-xs font-semibold tracking-[0.25em] text-[#F97316] uppercase font-mono">
-                  Can't find what you need?
-                </div>
-                <h3 className="mt-4 text-4xl font-extrabold tracking-tight text-white sm:text-5xl leading-tight">
-                  We build custom solutions.
-                </h3>
-                <p className="mt-5 text-lg leading-8 text-zinc-400">
-                  Our team handles bespoke foam conversion and packaging design for unique
-                  industrial and export requirements.
-                </p>
-              </div>
-              <Link
-                href="/contact"
-                className="relative z-10 inline-flex items-center gap-2 justify-center rounded-full bg-[#F97316] px-8 py-4.5 text-sm font-semibold text-white shadow-[0_18px_34px_rgba(249,115,22,0.35)] transition-all duration-300 hover:bg-white hover:text-black hover:-translate-y-0.5 shrink-0"
-              >
-                Request Custom Spec
-                <ArrowUpRight className="h-4 w-4" />
-              </Link>
+            <div className="inline-flex h-16 w-16 items-center justify-center rounded-full bg-accent/10 mb-8">
+              <ArrowUpRight className="h-8 w-8 text-accent" />
             </div>
+            <h2 className="display-l text-white mb-6">
+              Ready to Upgrade Your Supply Chain?
+            </h2>
+            <p className="body-large text-zinc-400 mb-12 max-w-2xl mx-auto">
+              Partner with an enterprise-grade manufacturer capable of scaling to your most demanding requirements.
+              Schedule a technical consultation with our engineering team today.
+            </p>
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center gap-3 bg-accent text-white font-bold text-sm tracking-[0.15em] px-12 py-6 hover:bg-white hover:text-primary transition-all duration-300 rounded-full uppercase premium-shadow magnetic-hover"
+            >
+              Request Enterprise Quote
+              <ArrowRight className="h-5 w-5" />
+            </Link>
           </Reveal>
         </div>
       </section>

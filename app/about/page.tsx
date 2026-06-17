@@ -1,248 +1,205 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Image from "next/image";
-
-import { Building2, CalendarDays, MapPinned, ShieldCheck, Users, Layers, Trophy, Sparkles } from "lucide-react";
+import { ArrowRight, ArrowUpRight, ShieldCheck, Wrench, Factory } from "lucide-react";
 
 import { Reveal } from "@/components/reveal";
-import { siteConfig } from "@/lib/content";
+import { WhyChooseUs } from "@/components/why-choose-us";
+import { IndustriesPreview } from "@/components/industries-preview";
+import { StatisticsGrid } from "@/components/statistics-grid";
 
 export const metadata: Metadata = {
-  title: "About Us",
+  title: "About Us | Vishwaraj Polychem",
   description:
-    "About Vishwaraj Polychem Private Limited, established in 1999 and incorporated in 2018 in Pune, Maharashtra. A trusted manufacturer of EPE foam, bubble film, and protective packaging.",
+    "Established in 1999, Vishwaraj Polychem is a premier manufacturer of protective packaging materials based in Pune, delivering engineering excellence.",
 };
+
+// Industries data moved to components/industries-preview.tsx
 
 export default function AboutPage() {
   return (
-    <div className="relative min-h-screen">
-      {/* ── Hero ─────────────────────────────────────────────── */}
-      <section className="relative overflow-hidden bg-[#F8F9FA] pt-36 pb-24 px-6 lg:px-12">
-        <div className="absolute inset-0 -z-10">
-          <Image
-            src="/images/epe-foam-texture.png"
-            alt="EPE foam backdrop"
-            fill
-            className="object-cover opacity-[0.055]"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#F8F9FA]/30 via-transparent to-[#F8F9FA]" />
+    <div className="relative min-h-screen bg-[#F8F9FA]">
+      
+      {/* ── 1. Compact Hero ─────────────────────────────────────────────── */}
+      <section className="relative overflow-hidden bg-primary pt-[96px] pb-10 px-6 lg:px-12 border-b border-white/10 flex items-center min-h-[300px]">
+        <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 bg-gradient-to-b from-primary via-primary/80 to-primary/95"></div>
+          <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)]"></div>
         </div>
 
-        <div className="mx-auto max-w-7xl">
+        <div className="mx-auto max-w-7xl relative z-10 w-full text-center">
           <Reveal>
-            <div className="inline-flex w-fit items-center gap-2 rounded-full border border-border bg-white px-4 py-2 text-xs font-semibold tracking-wider text-secondary uppercase font-mono mb-8 shadow-sm">
-              <Sparkles className="h-3.5 w-3.5 text-[#F97316]" />
-              Our Story
+            <div className="text-xs font-semibold tracking-[0.25em] text-accent uppercase font-mono mb-4">
+              About Us
             </div>
           </Reveal>
-
-          <Reveal delay={0.08}>
-            <h1 className="massive-text text-[color:var(--primary)] leading-[0.88] max-w-5xl">
-              <span>BUILT ON</span>
-              <br />
-              <span className="opacity-30">PRECISION.</span>
+          <Reveal delay={0.1}>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 tracking-tight">
+              Engineering Excellence Since 1999.
             </h1>
           </Reveal>
-
-          <Reveal delay={0.22}>
-            <p className="mt-8 max-w-2xl text-xl leading-9 text-[color:var(--secondary)]">
-              From a small unit in Pune to a full-scale MIDC facility, Vishwaraj Polychem has
-              spent {siteConfig.yearsInBusiness}+ years engineering packaging solutions that
-              protect critical manufactured goods across India.
+          <Reveal delay={0.2}>
+            <p className="max-w-2xl mx-auto text-lg leading-relaxed text-zinc-300">
+              We are professionally engaged in manufacturing advanced protective packaging materials, safeguarding your products against all odds.
             </p>
           </Reveal>
         </div>
       </section>
 
-      {/* ── Scrolling Accent Strip ────────────────────────────── */}
-      <div className="py-10 border-y border-border bg-white overflow-hidden">
-        <div className="scrolling-wrapper items-center gap-20 opacity-25">
-          {["Established 1999", "MIDC Pune", "EPE Foam", "Bubble Film", "25+ Years", "ISO Quality", "Custom Conversion"].map((word) => (
-            <div key={word} className="text-2xl font-extrabold tracking-[0.3em] text-primary uppercase font-heading shrink-0">{word}</div>
-          ))}
-          {["Established 1999", "MIDC Pune", "EPE Foam", "Bubble Film", "25+ Years", "ISO Quality", "Custom Conversion"].map((word) => (
-            <div key={`${word}-dup`} className="text-2xl font-extrabold tracking-[0.3em] text-primary uppercase font-heading shrink-0">{word}</div>
-          ))}
-        </div>
-      </div>
-
-      {/* ── Our Mission Narrative ─────────────────────────────── */}
-      <section className="py-24 sm:py-32 px-6 lg:px-12 bg-white">
-        <div className="mx-auto max-w-7xl grid gap-16 lg:grid-cols-[0.42fr_0.58fr] items-start">
-          <Reveal>
-            <div>
-              <div className="text-xs font-semibold tracking-[0.25em] text-[#F97316] uppercase font-mono">Our Mission</div>
-              <h2 className="mt-5 text-4xl sm:text-5xl font-extrabold tracking-tight text-primary leading-[1.1]">
-                Over two decades of precision protection engineering.
-              </h2>
-
-              {/* Stat pills */}
-              <div className="mt-12 grid grid-cols-2 gap-4">
-                {[
-                  { number: `${siteConfig.yearsInBusiness}+`, label: "Years in Business" },
-                  { number: "1999", label: "Year Founded" },
-                  { number: "MIDC", label: "Certified Facility" },
-                  { number: "∞", label: "Custom Solutions" },
-                ].map(({ number, label }) => (
-                  <div key={label} className="rounded-2xl border border-border bg-[#F8F9FA] p-5">
-                    <div className="text-3xl font-black text-[#F97316]">{number}</div>
-                    <div className="mt-1 text-xs font-semibold tracking-wider text-secondary uppercase">{label}</div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </Reveal>
-
-          <Reveal delay={0.1}>
-            <div className="space-y-7 text-lg leading-9 text-secondary">
-              <p>{siteConfig.description}</p>
-              {siteConfig.aboutText !== siteConfig.description && (
-                <p>{siteConfig.aboutText}</p>
-              )}
-              <div className="mt-10 rounded-[2rem] border border-[rgba(249,115,22,0.18)] bg-[rgba(249,115,22,0.03)] p-7">
-                <div className="text-xs font-semibold tracking-[0.2em] text-secondary uppercase font-mono mb-4">Our Strengths</div>
-                <div className="flex flex-wrap gap-2">
-                  {siteConfig.strengths.map((strength) => (
-                    <span
-                      key={strength}
-                      className="rounded-full border border-border bg-white px-4 py-1.5 text-xs font-semibold text-primary shadow-sm"
-                    >
-                      {strength}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </Reveal>
-        </div>
-      </section>
-
-      {/* ── Manufacturing & Quality ──────────────────────────── */}
-      <section className="py-24 sm:py-28 px-6 lg:px-12 bg-[#F3F4F6] border-y border-border">
-        <div className="mx-auto max-w-7xl">
-          <Reveal>
-            <div className="text-xs font-semibold tracking-[0.25em] text-[color:var(--secondary)] uppercase font-mono mb-4">Capability & Standards</div>
-            <h2 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-primary mb-16">
-              Engineering Meets Quality.
-            </h2>
-          </Reveal>
-
-          <div className="grid gap-6 lg:grid-cols-2">
-            <Reveal className="rounded-[2rem] border border-border bg-white p-8 shadow-[0_20px_50px_rgba(17,24,39,0.03)]">
-              <div className="flex items-center gap-3 text-xs font-semibold tracking-[0.22em] text-secondary uppercase font-mono mb-6">
-                <Layers className="h-4 w-4 text-[#F97316]" />
-                Manufacturing Capability
-              </div>
-              <p className="text-base leading-8 text-secondary">
-                Our Talawade facility operates advanced technological tools to develop custom EPE foam
-                block fitments, die-cut buffers, and laminated air bubble pouch assemblies. Through
-                precise thermal control, we achieve flexible yet high-load retaining cellular structures
-                designed for automotive spare parts and static-sensitive electronic systems.
-              </p>
-              <div className="mt-8">
-                <div className="relative overflow-hidden rounded-2xl aspect-[16/8]">
-                  <Image
-                    src="/images/banner1.jpg"
-                    alt="Manufacturing facility"
-                    fill
-                    className="object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
-                  <div className="absolute bottom-4 left-4 text-[10px] font-bold tracking-[0.2em] text-white uppercase font-mono">
-                    Talawade MIDC, Pune
-                  </div>
-                </div>
-              </div>
-            </Reveal>
-
-            <Reveal delay={0.08} className="rounded-[2rem] border border-border bg-white p-8 shadow-[0_20px_50px_rgba(17,24,39,0.03)]">
-              <div className="flex items-center gap-3 text-xs font-semibold tracking-[0.22em] text-secondary uppercase font-mono mb-6">
-                <Trophy className="h-4 w-4 text-[#F97316]" />
-                Quality Standards
-              </div>
-              {siteConfig.qualityPolicy?.statement && (
-                <p className="text-base leading-8 text-secondary mb-6">
-                  {siteConfig.qualityPolicy.statement}
-                </p>
-              )}
-              <div className="grid gap-2">
-                {siteConfig.qualityPolicy?.principles?.map((principle) => (
-                  <div
-                    key={principle}
-                    className="rounded-xl border border-border bg-[#F8F9FA] px-4 py-3 text-xs font-semibold text-primary uppercase font-mono flex items-center gap-3"
-                  >
-                    <span className="h-1.5 w-1.5 rounded-full bg-[#F97316] shrink-0" />
-                    {principle}
-                  </div>
-                ))}
-              </div>
-            </Reveal>
-          </div>
-        </div>
-      </section>
-
-      {/* ── Vision ────────────────────────────────────────────── */}
-      {siteConfig.vision.length > 0 && (
-        <section className="py-24 sm:py-28 px-6 lg:px-12 bg-white">
-          <div className="mx-auto max-w-7xl">
+      {/* ── 2. Company Overview ─────────────────────────────────────────────── */}
+      <section className="py-16 px-6 lg:px-12 bg-white border-b border-border">
+        <div className="mx-auto max-w-7xl grid gap-16 lg:grid-cols-2 items-center">
+          <div>
             <Reveal>
-              <div className="text-xs font-semibold tracking-[0.25em] text-[#F97316] uppercase font-mono mb-4">Vision & Leadership</div>
-              <h2 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-primary mb-16">
-                Packaging Leadership.
+              <h2 className="text-3xl font-extrabold tracking-tight text-primary mb-6">
+                Vishwaraj Polychem Private Limited
               </h2>
             </Reveal>
-
-            <div className="grid gap-6 md:grid-cols-2">
-              {siteConfig.vision.map((item, index) => (
-                <Reveal key={index} delay={index * 0.06}>
-                  <div className="rounded-[2rem] border border-border bg-[#F8F9FA] hover:bg-white hover:border-[rgba(249,115,22,0.3)] transition-all duration-300 p-8 shadow-sm hover:shadow-md flex gap-5 items-start">
-                    <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white text-xs font-black text-[#F97316] shadow border border-border shrink-0">
-                      {index + 1}
-                    </span>
-                    <p className="text-base leading-8 text-secondary">{item}</p>
-                  </div>
-                </Reveal>
-              ))}
-            </div>
+            <Reveal delay={0.1}>
+              <div className="space-y-5 text-lg leading-relaxed text-secondary">
+                <p>
+                  Incorporated in the year 1999, we manufacture packaging materials developed from quality foam. Located at the industrial hub of Pune, Maharashtra, we are one of the most reputed manufacturers, suppliers, and service providers of a wide range of protective foam products.
+                </p>
+                <p>
+                  Our comprehensive product categories include PU foam, EPE foam, Air Bubble Film and Pouches, and Crosslinked Foam. We intend to render absolute safe packaging for computers, automotive parts, pharmaceuticals, home appliances, telecommunication equipment, and heavy gensets.
+                </p>
+                <p>
+                  We have well-integrated marketing and distribution teams making our products available in every nook and corner. Our effective strategies enable us to personally connect with our customers and serve each product desired by them with molecular-level precision.
+                </p>
+              </div>
+            </Reveal>
           </div>
-        </section>
-      )}
-
-      {/* ── Corporate Registration ────────────────────────────── */}
-      <section className="py-24 sm:py-28 px-6 lg:px-12 bg-[#F3F4F6] border-t border-border">
-        <div className="mx-auto max-w-7xl">
-          <Reveal>
-            <div className="text-xs font-semibold tracking-[0.25em] text-secondary uppercase font-mono mb-4">Registration & Governance</div>
-            <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-primary mb-12">
-              Official Corporate Details.
-            </h2>
-          </Reveal>
-
-          <Reveal>
-            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-              {(
-                [
-                  [CalendarDays, "Established", String(siteConfig.foundedYear)],
-                  [ShieldCheck, "Incorporated", String(siteConfig.incorporatedYear)],
-                  [MapPinned, "Headquarters", `${siteConfig.headquarters.city}, ${siteConfig.headquarters.state}`],
-                  [Users, "Company Type", siteConfig.companyType],
-                ] as const
-              ).map(([Icon, label, value]) => (
-                <div key={label} className="rounded-2xl border border-border bg-white p-6 shadow-sm">
-                  <Icon className="h-5 w-5 text-[#F97316]" />
-                  <div className="mt-4 text-[10px] font-bold tracking-[0.2em] text-secondary uppercase font-mono">{label}</div>
-                  <div className="mt-1 text-base font-bold text-primary">{value}</div>
-                </div>
-              ))}
-            </div>
-
-            <div className="mt-4 rounded-2xl border border-border bg-white p-6 shadow-sm">
-              <Building2 className="h-5 w-5 text-[#F97316]" />
-              <div className="mt-4 text-[10px] font-bold tracking-[0.2em] text-secondary uppercase font-mono">Corporate Identity Number (CIN)</div>
-              <div className="mt-1 text-base font-mono font-bold text-primary tracking-wide">{siteConfig.cin}</div>
+          <Reveal delay={0.2}>
+            <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden shadow-2xl">
+              <Image
+                src="/images/hero_factory.png"
+                alt="Vishwaraj Polychem Manufacturing Facility"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+              <div className="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-2xl"></div>
             </div>
           </Reveal>
         </div>
       </section>
+
+      {/* ── 3. Why Choose Vishwaraj ─────────────────────────────────────────────── */}
+      <WhyChooseUs />
+
+      {/* ── 4. Industries We Serve ─────────────────────────────────────────────── */}
+      <IndustriesPreview />
+
+      {/* ── 5. Manufacturing Excellence ─────────────────────────────────────────────── */}
+      <section className="py-16 px-6 lg:px-12 bg-[#F8F9FA] border-b border-border">
+        <div className="mx-auto max-w-7xl grid gap-16 lg:grid-cols-[0.45fr_0.55fr] items-center">
+          <Reveal className="order-2 lg:order-1">
+            <div className="grid grid-cols-2 gap-4">
+              <div className="relative aspect-square rounded-2xl overflow-hidden shadow-sm">
+                <Image
+                  src="/images/warehouse_logistics.png"
+                  alt="Warehouse & Logistics"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 50vw, 25vw"
+                />
+              </div>
+              <div className="relative aspect-square rounded-2xl overflow-hidden shadow-sm">
+                <Image
+                  src="/images/epe_11.png"
+                  alt="Foam Conversion Machinery"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 50vw, 25vw"
+                />
+              </div>
+              <div className="relative aspect-[2/1] col-span-2 rounded-2xl overflow-hidden shadow-sm">
+                <Image
+                  src="/images/epe-sheet-stack.png"
+                  alt="Foam Manufacturing Precision"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
+              </div>
+            </div>
+          </Reveal>
+          <div className="order-1 lg:order-2">
+            <Reveal>
+              <div className="text-xs font-semibold tracking-[0.25em] text-accent uppercase font-mono mb-4">
+                Operations
+              </div>
+              <h2 className="text-3xl font-extrabold tracking-tight text-primary mb-6">
+                Manufacturing Excellence
+              </h2>
+            </Reveal>
+            <Reveal delay={0.1}>
+              <p className="text-lg leading-relaxed text-secondary mb-8">
+                The company has set up a robust infrastructure equipped with advanced technological tools. Our factory features dedicated zones for extrusion, lamination, and precision die-cutting, ensuring we handle bulk industrial orders while maintaining stringent quality control across every batch.
+              </p>
+              <ul className="space-y-5">
+                <li className="flex gap-4 items-start">
+                  <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center shrink-0 border border-border shadow-sm">
+                    <ShieldCheck className="w-5 h-5 text-accent" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-primary">Quality Raw Materials</h4>
+                    <p className="text-sm text-secondary mt-1">Sourcing superior polymers to ensure absolute consistency.</p>
+                  </div>
+                </li>
+                <li className="flex gap-4 items-start">
+                  <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center shrink-0 border border-border shadow-sm">
+                    <Wrench className="w-5 h-5 text-accent" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-primary">Precision Engineering</h4>
+                    <p className="text-sm text-secondary mt-1">Advanced die-cutting and laminating techniques.</p>
+                  </div>
+                </li>
+                <li className="flex gap-4 items-start">
+                  <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center shrink-0 border border-border shadow-sm">
+                    <Factory className="w-5 h-5 text-accent" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-primary">Modern Infrastructure</h4>
+                    <p className="text-sm text-secondary mt-1">High-capacity extrusion lines and conversion centers.</p>
+                  </div>
+                </li>
+              </ul>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
+      {/* ── 6. Statistics ─────────────────────────────────────────────── */}
+      <StatisticsGrid />
+
+      {/* ── 7. Final CTA ──────────────────────────────────────────────── */}
+      <section className="py-20 sm:py-24 bg-graphite relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,90,0,0.15),transparent_60%)]"></div>
+        <div className="container-shell relative z-10 text-center">
+          <Reveal>
+            <div className="inline-flex h-16 w-16 items-center justify-center rounded-full bg-accent/10 mb-8">
+              <ArrowUpRight className="h-8 w-8 text-accent" />
+            </div>
+            <h2 className="display-l text-white mb-6">
+              Ready to Upgrade Your Supply Chain?
+            </h2>
+            <p className="body-large text-zinc-400 mb-12 max-w-2xl mx-auto">
+              Partner with an enterprise-grade manufacturer capable of scaling to your most demanding requirements.
+              Schedule a technical consultation with our engineering team today.
+            </p>
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center gap-3 bg-accent text-white font-bold text-sm tracking-[0.15em] px-12 py-6 hover:bg-white hover:text-primary transition-all duration-300 rounded-full uppercase premium-shadow magnetic-hover"
+            >
+              Request Enterprise Quote
+              <ArrowRight className="h-5 w-5" />
+            </Link>
+          </Reveal>
+        </div>
+      </section>
+
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Manrope, Space_Grotesk } from "next/font/google";
+import { Manrope, Inter } from "next/font/google";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { globalSeo, siteConfig } from "@/lib/content";
@@ -11,8 +11,8 @@ const manrope = Manrope({
   display: "swap",
 });
 
-const spaceGrotesk = Space_Grotesk({
-  variable: "--font-space-grotesk",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
   display: "swap",
 });
@@ -99,8 +99,8 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en" className={`${manrope.variable} ${spaceGrotesk.variable} h-full scroll-smooth antialiased`}>
-      <body className="min-h-full bg-[color:var(--background)] text-[color:var(--primary)]">
+    <html lang="en" className={`${manrope.variable} ${inter.variable} h-full scroll-smooth antialiased`}>
+      <body className="min-h-full">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}

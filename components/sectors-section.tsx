@@ -62,12 +62,12 @@ export function SectorsSection() {
               sizes="100vw"
               priority={i === 0}
             />
-            <div className="absolute inset-0 bg-[#F8F9FA]/88" />
+            <div className="absolute inset-0 bg-[#0A192F]/90 backdrop-blur-sm" />
           </div>
         ))}
         {/* Default backdrop when no hover */}
         <div
-          className="absolute inset-0 bg-[#F3F4F6] transition-opacity duration-700"
+          className="absolute inset-0 bg-[#0A192F] transition-opacity duration-700"
           style={{ opacity: activeImage ? 0 : 1 }}
         />
       </div>
@@ -77,17 +77,17 @@ export function SectorsSection() {
         <Reveal>
           <div className="mb-16 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
             <div>
-              <div className="text-xs font-semibold tracking-[0.25em] text-secondary uppercase font-mono mb-3">
+              <div className="text-[11px] font-bold tracking-[0.3em] text-accent uppercase font-mono mb-3">
                 Sectors Served
               </div>
-              <h2 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-primary leading-[0.95]">
+              <h2 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[0.95] font-heading">
                 Global<br />
                 <span className="opacity-30">Reach.</span>
               </h2>
             </div>
             <Link
               href="/industries"
-              className="inline-flex items-center gap-2 text-xs font-bold tracking-widest text-secondary uppercase hover:text-[#F97316] transition-colors self-start sm:self-end"
+              className="inline-flex items-center gap-2 text-xs font-bold tracking-[0.2em] text-zinc-400 uppercase hover:text-white transition-colors self-start sm:self-end"
             >
               All Industries
               <ArrowUpRight className="h-4 w-4" />
@@ -109,17 +109,18 @@ export function SectorsSection() {
                 className="group flex items-center justify-between py-5 sm:py-7 gap-4"
               >
                 <div className="flex items-center gap-8">
-                  <span className="text-[10px] font-bold text-secondary font-mono w-5 shrink-0">
+                  <span className="text-[10px] font-bold text-zinc-500 font-mono w-5 shrink-0">
                     0{index + 1}
                   </span>
                   <span
-                    className="text-4xl sm:text-6xl lg:text-8xl font-extrabold tracking-tight leading-none uppercase transition-all duration-500 ease-out"
+                    className="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tighter leading-none uppercase transition-all duration-500 ease-out font-heading"
                     style={{
                       color:
                         hoveredIndex === index
-                          ? "#F97316"
-                          : "rgba(17,24,39,0.2)",
-                      paddingLeft: hoveredIndex === index ? "1rem" : "0",
+                          ? "white"
+                          : "rgba(255,255,255,0.15)",
+                      paddingLeft: hoveredIndex === index ? "2rem" : "0",
+                      transform: hoveredIndex === index ? "scale(1.02)" : "scale(1)",
                     }}
                   >
                     {sector.industry}
@@ -130,10 +131,10 @@ export function SectorsSection() {
                   className="flex items-center gap-4 transition-all duration-500"
                   style={{ opacity: hoveredIndex === index ? 1 : 0 }}
                 >
-                  <span className="hidden sm:block text-sm text-secondary max-w-xs text-right leading-6">
+                  <span className="hidden sm:block text-sm text-zinc-300 max-w-xs text-right leading-6 font-light">
                     {sector.description}
                   </span>
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#F97316] text-white shadow-[0_12px_24px_rgba(249,115,22,0.3)] shrink-0">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-accent text-white shadow-[0_12px_24px_rgba(224,90,0,0.3)] shrink-0 transition-transform duration-300 hover:scale-110">
                     <ArrowUpRight className="h-5 w-5" />
                   </div>
                 </div>
