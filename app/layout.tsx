@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import { Manrope, Inter } from "next/font/google";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { FloatingActions } from "@/components/floating-actions";
 import { globalSeo, siteConfig } from "@/lib/content";
 import "./globals.css";
-
+ 
 const manrope = Manrope({
   variable: "--font-manrope",
   subsets: ["latin"],
@@ -108,6 +109,7 @@ export default function RootLayout({
         <div className="flex min-h-screen flex-col">
           <SiteHeader />
           <main className="flex-1">{children}</main>
+          <FloatingActions />
           <SiteFooter />
         </div>
       </body>
