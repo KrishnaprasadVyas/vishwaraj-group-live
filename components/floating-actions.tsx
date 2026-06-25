@@ -5,11 +5,11 @@ import { Phone } from "lucide-react";
 
 export function FloatingActions() {
   return (
-    <div className="fixed bottom-6 right-6 z-40 flex flex-col gap-3.5 items-end">
+    <div className="fixed bottom-6 left-6 z-40 flex flex-col gap-3.5 items-start">
       {/* Contact Button */}
       <div className="group relative flex items-center">
         {/* Tooltip */}
-        <span className="absolute right-full mr-3 whitespace-nowrap rounded-md bg-[#004080] px-2.5 py-1 text-xs font-semibold text-white shadow-sm opacity-0 scale-95 pointer-events-none transition-all duration-200 group-hover:opacity-100 group-hover:scale-100">
+        <span className="absolute left-full ml-3 whitespace-nowrap rounded-md bg-[#004080] px-2.5 py-1 text-xs font-semibold text-white shadow-sm opacity-0 scale-95 pointer-events-none transition-all duration-200 group-hover:opacity-100 group-hover:scale-100">
           Contact Us
         </span>
         <Link
@@ -24,7 +24,7 @@ export function FloatingActions() {
       {/* WhatsApp Button */}
       <div className="group relative flex items-center">
         {/* Tooltip */}
-        <span className="absolute right-full mr-3 whitespace-nowrap rounded-md bg-[#25D366] px-2.5 py-1 text-xs font-semibold text-white shadow-sm opacity-0 scale-95 pointer-events-none transition-all duration-200 group-hover:opacity-100 group-hover:scale-100">
+        <span className="absolute left-full ml-3 whitespace-nowrap rounded-md bg-[#25D366] px-2.5 py-1 text-xs font-semibold text-white shadow-sm opacity-0 scale-95 pointer-events-none transition-all duration-200 group-hover:opacity-100 group-hover:scale-100">
           WhatsApp
         </span>
         <a
