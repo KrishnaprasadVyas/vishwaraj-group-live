@@ -125,8 +125,8 @@ export default function ContactPage() {
                                         <div className="text-[10px] font-bold tracking-[0.18em] text-secondary uppercase font-mono mb-2">
                                             Business Hours
                                         </div>
-                                        <div className="text-sm text-primary font-semibold">Mon – Sat: 9 AM – 6 PM IST</div>
-                                        <div className="text-xs text-secondary mt-1">Sunday: Closed</div>
+                                        <div className="text-sm text-primary font-semibold">Friday – Wednesday: 9:00 AM – 6:00 PM</div>
+                                        <div className="text-xs text-secondary mt-1">Thursday: Closed</div>
                                     </div>
                                 </div>
                             </div>
@@ -193,7 +193,7 @@ export default function ContactPage() {
                                         </div>
                                         <div className="pt-2 border-t border-border flex flex-col gap-1">
                                             <span className="text-[10px] font-bold tracking-[0.18em] text-secondary uppercase font-mono">Address</span>
-                                            <span className="text-sm text-primary font-semibold">More Wasti, Pimpri-Chinchwad, Pune, Maharashtra - 412114</span>
+                                            <span className="text-sm text-primary font-semibold">Jyotiba Nagar, Talwade, Pimpri-Chinchwad, Maharashtra - 411062</span>
                                         </div>
                                     </div>
 
@@ -201,7 +201,7 @@ export default function ContactPage() {
                                     <div className="rounded-2xl overflow-hidden border border-border aspect-[16/9] w-full relative">
                                         <iframe
                                             title="Manufacturing Plant 1 Map"
-                                            src="https://maps.google.com/maps?q=18.685333,73.786389&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                                            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3779.524251496856!2d73.786389!3d18.685333000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTjCsDQxJzA3LjIiTiA3M8KwNDcnMTEuMCJF!5e0!3m2!1sen!2sin!4v1782371350606!5m2!1sen!2sin"
                                             className="w-full h-full"
                                             loading="lazy"
                                             referrerPolicy="no-referrer-when-downgrade"
@@ -250,7 +250,7 @@ export default function ContactPage() {
                                         </div>
                                         <div className="pt-2 border-t border-border flex flex-col gap-1">
                                             <span className="text-[10px] font-bold tracking-[0.18em] text-secondary uppercase font-mono">Address</span>
-                                            <span className="text-sm text-primary font-semibold">Khed, Pune, Maharashtra - 412109</span>
+                                            <span className="text-sm text-primary font-semibold">Yelwadi, Khed, Pune, Maharashtra - 412109</span>
                                         </div>
                                     </div>
 
@@ -258,7 +258,7 @@ export default function ContactPage() {
                                     <div className="rounded-2xl overflow-hidden border border-border aspect-[16/9] w-full relative">
                                         <iframe
                                             title="Manufacturing Plant 2 Map"
-                                            src="https://maps.google.com/maps?q=18.722167,73.758917&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                                            src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d3778.701735322844!2d73.758917!3d18.722167!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTjCsDQzJzE5LjgiTiA3M8KwNDsnMzIuMSJF!5e0!3m2!1sen!2sin!4v1782371599077!5m2!1sen!2sin"
                                             className="w-full h-full"
                                             loading="lazy"
                                             referrerPolicy="no-referrer-when-downgrade"

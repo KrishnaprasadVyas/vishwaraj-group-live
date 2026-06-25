@@ -178,77 +178,77 @@ export function getStaticPathList() {
 export function getProductImage(slug: string, categorySlug?: string): string {
   switch (slug) {
     case "air-bubble-film":
-      return "/images/bubble-wrap-texture.png";
+      return "/images/products/2-layer-bubble-film.jpg";
     case "2-layer-bubble-bags":
-      return "/images/p12.png";
+      return "/images/products/2-layer-bubble-film.jpg";
     case "3-layer-bubble-bags":
-      return "/images/p13.png";
+      return "/images/products/3-layer-bubble-bags.jpg";
     case "bubble-with-woven-sack-laminated-bags-sheet":
-      return "/images/p2.png";
+      return "/images/products/bubble-with-woven-sack-laminated.jpg";
     case "bubble-with-pe-foam-laminated-bags":
-      return "/images/p3.png";
+      return "/images/products/bubble-with-pe-foam-laminated-bags.jpg";
     case "bubble-with-aluminium-film-laminated-bags-sheet":
-      return "/images/bubble-reflective-texture.png";
+      return "/images/products/antistatic-bubble-bags.jpg";
     case "antistatic-bubble-bags":
-      return "/images/bubble-reflective-texture.png";
+      return "/images/products/antistatic-bubble-bags.jpg";
     case "bubble-with-kraft-paper-laminated-sheet":
-      return "/images/p2.png";
+      return "/images/products/bubble-with-woven-sack-laminated.jpg";
     case "3d-bubble-bags":
-      return "/images/vproduct3.jpg";
+      return "/images/products/3d-bubble-bags.jpg";
 
     case "epe-sheet-and-sheet-application":
-      return "/images/epe-sheet-stack.png";
+      return "/images/products/epe-sheet-and-sheet-application.jpg";
     case "epe-sheet-rolls-and-sheet-applications":
-      return "/images/epe_11.png";
+      return "/images/products/epe-sheet-and-sheet-application.jpg";
     case "epe-foam-tube":
-      return "/images/vproduct1.jpg";
+      return "/images/products/epe-foam-tube.jpeg";
     case "epe-foam-rod":
-      return "/images/vproduct2.jpg";
+      return "/images/products/epe-foam-rod.jpg";
     case "epe-polyethylene-foam":
-      return "/images/epe-sheet-stack.png";
+      return "/images/products/epe-polyethylene-foam.jpg";
 
     case "pu-foam-sheet":
-      return "/images/epe_11.png"; // foam packaging trays
+      return "/images/products/pu-foam-sheet.jpg";
     case "crosslinked-foam":
-      return "/images/p3.png"; // grey die-cut foam insert
+      return "/images/products/crosslinked-foam.jpeg";
     case "epdm-foam":
-      return "/images/p2.png"; // dark grey rubber/EPDM foam roll
+      return "/images/products/epdm-foam.jpg";
     case "xlpe-foam":
-      return "/images/vproduct3.jpg"; // coloured foam tubes
+      return "/images/products/xlpe-foam.jpg";
     case "nitril-foam":
-      return "/images/vproduct1.jpg"; // foam rolls & profiles
+      return "/images/products/nitril-foam.jpg";
 
     case "stretch-film":
-      return "/images/vproduct1.jpg";
+      return "/images/products/stretch-film.jpg";
     case "bopp-tapes":
-      return "/images/vproduct3.jpg";
+      return "/images/products/bopp-tapes.jpg";
 
     case "export-packaging-items":
-      return "/images/vproduct2.jpg";
+      return "/images/products/export-packaging-items.jpg";
     case "industrial-chemicals":
-      return "/images/bubble-reflective-texture.png";
+      return "/images/products/industrial-chemicals.jpg";
 
     case "gravity-die-casting":
     case "non-ferrous-die-casting":
     case "aluminum-die-casting":
     case "finished-components":
-      return "/images/vproduct2.jpg";
+      return "/images/products/export-packaging-items.jpg";
     case "shell-core-casting":
     case "aluminum-footrest":
     case "cnc-components":
     case "vmc-components":
-      return "/images/vproduct1.jpg";
+      return "/images/products/epe-foam-tube.jpeg";
     case "valve-casting":
     case "led-street-light-casting":
     case "gearbox-casting":
     case "manifold-die-casting":
-      return "/images/vproduct3.jpg";
+      return "/images/products/xlpe-foam.jpg";
 
     default:
       if (categorySlug === "air-bubble-film") {
-        return "/images/bubble-wrap-texture.png";
+        return "/images/products/2-layer-bubble-film.jpg";
       } else if (categorySlug === "epe-foam") {
-        return "/images/epe-sheet-stack.png";
+        return "/images/products/epe-sheet-and-sheet-application.jpg";
       } else if (
         categorySlug === "pu-foam" ||
         categorySlug === "crosslinked-foam" ||
@@ -256,8 +256,8 @@ export function getProductImage(slug: string, categorySlug?: string): string {
         categorySlug === "xlpe-foam" ||
         categorySlug === "nitril-foam"
       ) {
-        return "/images/epe_11.png";
+        return "/images/products/pu-foam-sheet.jpg";
       }
-      return "/images/bubble-wrap-texture.png"; // generic fallback
+      return "/images/products/2-layer-bubble-film.jpg"; // generic fallback
   }
 }

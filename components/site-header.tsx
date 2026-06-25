@@ -31,13 +31,13 @@ export function SiteHeader() {
           
           {/* Left: Logo Only */}
           <div className="flex flex-1 justify-start h-full items-center">
-            <Link href="/" className="relative h-[48px] w-[260px] shrink-0 flex items-center">
+            <Link href="/" className="relative h-[56px] w-[280px] shrink-0 flex items-center">
               <Image
                 src="/images/logo.png"
                 alt="Vishwaraj Polychem logo"
                 fill
                 className="object-contain object-left"
-                sizes="260px"
+                sizes="280px"
                 priority
               />
             </Link>
