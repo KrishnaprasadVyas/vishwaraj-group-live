@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
 import { ArrowRight, ArrowUpRight, ShieldCheck, Cog, Clock, ThumbsUp, MapPin, Award, Building2, Package, Car, Cpu, Pill, Wrench, Factory, ShoppingCart } from "lucide-react";
 
 import { Reveal } from "@/components/reveal";

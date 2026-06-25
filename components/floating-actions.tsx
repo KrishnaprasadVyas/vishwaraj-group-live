@@ -15,7 +15,7 @@ export function FloatingActions() {
         <Link
           href="/contact"
           aria-label="Contact Us"
-          className="flex h-12 w-12 items-center justify-center rounded-full bg-[#004080] text-white shadow-[0_4px_16px_rgba(0,64,128,0.3)] transition-all duration-300 hover:bg-[#003366] hover:scale-110 active:scale-95"
+          className="animate-pulse-contact flex h-12 w-12 items-center justify-center rounded-full bg-[#004080] text-white"
         >
           <Phone className="h-5 w-5" />
         </Link>
@@ -32,7 +32,7 @@ export function FloatingActions() {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Contact us on WhatsApp"
-          className="flex h-12 w-12 items-center justify-center rounded-full bg-[#25D366] text-white shadow-[0_4px_16px_rgba(37,211,102,0.3)] transition-all duration-300 hover:bg-[#20ba5a] hover:scale-110 active:scale-95"
+          className="animate-pulse-whatsapp flex h-12 w-12 items-center justify-center rounded-full bg-[#25D366] text-white"
         >
           {/* Custom WhatsApp SVG Icon */}
           <svg

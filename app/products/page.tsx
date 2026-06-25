@@ -14,11 +14,6 @@ export const metadata: Metadata = {
 };
 
 export default function ProductsPage() {
-  // First product image per category as a cover
-  const topProducts = productGroups
-    .map((group) => group.products[0])
-    .filter(Boolean)
-    .slice(0, 4);
 
   return (
     <div className="relative min-h-screen">

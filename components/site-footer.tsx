@@ -3,12 +3,11 @@ import Image from "next/image";
 import { Mail, MapPin, Phone, ArrowUpRight } from "lucide-react";
 
 import { cleanContactDetails, footerLinks, productGroups, siteConfig } from "@/lib/content";
+import { EmailLink } from "@/components/email-link";
 
 export function SiteFooter() {
   const primaryAddress = cleanContactDetails.addresses?.[0];
   const primaryPhone = cleanContactDetails.phoneNumbers?.[0];
-  const primaryEmail = cleanContactDetails.emails?.[0];
-  const secondaryEmail = cleanContactDetails.emails?.[1];
 
   return (
     <footer className="border-t border-white/10 bg-primary text-white">
@@ -53,18 +52,24 @@ export function SiteFooter() {
                   <span>{primaryPhone.formatted ?? primaryPhone.number}</span>
                 </a>
               )}
-              {primaryEmail && (
-                <a href={`mailto:${primaryEmail.email}`} className="flex gap-3 items-center hover:text-white transition-colors">
+              
+              {/* Official Emails */}
+              {[
+                "noreply@vishwarajpolychem.com",
+                "vishwaraj99@rediffmail.com",
+                "vishwarajppl18@gmail.com",
+                "info@vishwarajgroup.com",
+                "sales@vishwaraj.com"
+              ].map((email) => (
+                <EmailLink 
+                  key={email} 
+                  email={email} 
+                  className="flex gap-3 items-center hover:text-white transition-colors"
+                >
                   <Mail className="h-4 w-4 shrink-0 text-accent" />
-                  <span>{primaryEmail.email}</span>
-                </a>
-              )}
-              {secondaryEmail && (
-                <a href={`mailto:${secondaryEmail.email}`} className="flex gap-3 items-center hover:text-white transition-colors">
-                  <Mail className="h-4 w-4 shrink-0 text-accent" />
-                  <span>{secondaryEmail.email}</span>
-                </a>
-              )}
+                  <span className="break-all">{email}</span>
+                </EmailLink>
+              ))}
             </div>
           </div>
 

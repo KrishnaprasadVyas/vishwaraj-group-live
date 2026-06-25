@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Calendar, MapPin, Package, Settings, Wrench, ShieldCheck } from "lucide-react";
+import { ArrowRight, Calendar, MapPin, Settings, Wrench } from "lucide-react";
 import { Reveal } from "@/components/reveal";
 
 export function AboutOverview() {
@@ -23,7 +23,7 @@ export function AboutOverview() {
             <Reveal delay={0.1}>
               <div className="space-y-6 text-lg leading-relaxed text-secondary mb-10">
                 <p>
-                  Operating from our state-of-the-art Pune MIDC manufacturing facility, Vishwaraj Polychem is a premier manufacturer of advanced protective packaging systems. We don't just sell foam—we engineer tailored transit solutions.
+                  Operating from our state-of-the-art Pune MIDC manufacturing facility, Vishwaraj Polychem is a premier manufacturer of advanced protective packaging systems. We don&apos;t just sell foam—we engineer tailored transit solutions.
                 </p>
                 <p>
                   Our comprehensive expertise spans EPE foam, PU foam, Air Bubble films, and specialized industrial chemicals. Through a strict engineering-first approach and a commitment to quality manufacturing, we have built long-term relationships with leading brands across India.

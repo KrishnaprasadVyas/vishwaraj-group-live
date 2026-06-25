@@ -4,6 +4,7 @@ import { Mail, MapPinned, Phone, Clock, ArrowUpRight } from "lucide-react";
 
 import { ContactForm } from "@/components/contact-form";
 import { Reveal } from "@/components/reveal";
+import { EmailLink } from "@/components/email-link";
 import { cleanContactDetails } from "@/lib/content";
 
 export const metadata: Metadata = {
@@ -34,7 +35,7 @@ export default function ContactPage() {
                     </Reveal>
                     <Reveal delay={0.1}>
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 tracking-tight">
-                            Let's Connect.
+                            Let&apos;s Connect.
                         </h1>
                     </Reveal>
                     <Reveal delay={0.2}>
@@ -94,23 +95,7 @@ export default function ContactPage() {
                                     ))}
 
                                     {emails.map((email) => (
-                                        <a
-                                            key={email.email}
-                                            href={`mailto:${email.email}`}
-                                            className="flex gap-4 items-start group"
-                                        >
-                                            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-[rgba(249,115,22,0.08)] text-[#F97316] group-hover:bg-[#F97316] group-hover:text-white transition-colors duration-300">
-                                                <Mail className="h-5 w-5" />
-                                            </div>
-                                            <div>
-                                                <div className="text-[10px] font-bold tracking-[0.18em] text-secondary uppercase font-mono mb-1">
-                                                    Email
-                                                </div>
-                                                <div className="text-sm font-semibold text-primary group-hover:text-[#F97316] transition-colors break-all">
-                                                    {email.email}
-                                                </div>
-                                            </div>
-                                        </a>
+                                        <EmailLink key={email.email} email={email.email} />
                                     ))}
                                 </div>
                             </div>

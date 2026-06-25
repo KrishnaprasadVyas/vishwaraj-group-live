@@ -33,16 +33,20 @@
   ],
   "emails": [
     {
+      "email": "noreply@vishwarajpolychem.com",
+      "type": "noreply"
+    },
+    {
       "email": "vishwaraj99@rediffmail.com",
       "type": "primary"
     },
     {
-      "email": "info@vishwarajgroup.com",
-      "type": "general_inquiry"
-    },
-    {
       "email": "vishwarajppl18@gmail.com",
       "type": "alternate"
+    },
+    {
+      "email": "info@vishwarajgroup.com",
+      "type": "general_inquiry"
     },
     {
       "email": "sales@vishwaraj.com",

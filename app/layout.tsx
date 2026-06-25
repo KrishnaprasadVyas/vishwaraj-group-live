@@ -3,6 +3,7 @@ import { Manrope, Inter } from "next/font/google";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { FloatingActions } from "@/components/floating-actions";
+import { EmailModalProvider } from "@/components/email-modal-provider";
 import { globalSeo, siteConfig } from "@/lib/content";
 import "./globals.css";
  
@@ -106,12 +107,14 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
         />
-        <div className="flex min-h-screen flex-col">
-          <SiteHeader />
-          <main className="flex-1">{children}</main>
-          <FloatingActions />
-          <SiteFooter />
-        </div>
+        <EmailModalProvider>
+          <div className="flex min-h-screen flex-col">
+            <SiteHeader />
+            <main className="flex-1">{children}</main>
+            <FloatingActions />
+            <SiteFooter />
+          </div>
+        </EmailModalProvider>
       </body>
     </html>
   );

@@ -18,11 +18,30 @@ const navLinks = [
 export function SiteHeader() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [hasScrolled, setHasScrolled] = useState(false);
+
+  const [prevPathname, setPrevPathname] = useState(pathname);
 
   // Close mobile nav on route change
-  useEffect(() => {
+  if (pathname !== prevPathname) {
+    setPrevPathname(pathname);
     setMobileOpen(false);
-  }, [pathname]);
+  }
+
+  // Track scroll position for logo zoom
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 8) {
+        setHasScrolled(true);
+      } else {
+        setHasScrolled(false);
+      }
+    };
+    // Initialize immediately
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <>
@@ -31,7 +50,15 @@ export function SiteHeader() {
           
           {/* Left: Logo Only */}
           <div className="flex flex-1 justify-start h-full items-center">
-            <Link href="/" className="relative h-[56px] w-[280px] shrink-0 flex items-center">
+            <Link 
+              href="/" 
+              style={{
+                transform: hasScrolled ? "scale(1.22)" : "scale(1.0)",
+                transformOrigin: "left center",
+                transition: "transform 400ms cubic-bezier(0.16, 1, 0.3, 1)"
+              }}
+              className="relative h-[56px] w-[280px] shrink-0 flex items-center"
+            >
               <Image
                 src="/images/logo.png"
                 alt="Vishwaraj Polychem logo"

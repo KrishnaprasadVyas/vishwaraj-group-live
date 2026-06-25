@@ -189,4 +189,70 @@ h1, h2, h3, h4, h5, h6 {
 ::-webkit-scrollbar-thumb { background: var(--color-steel-gray); border-radius: 4px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--color-graphite); }
 
+/* Floating Action Buttons Animations */
+@keyframes float-pulse-whatsapp {
+  0%, 100% {
+    transform: scale(1) translateY(0);
+    box-shadow: 0 4px 16px rgba(37, 211, 102, 0.3), 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+  20% {
+    transform: scale(1.08) translateY(-1px);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4), 0 0 14px 6px rgba(37, 211, 102, 0.4);
+  }
+  40% {
+    transform: scale(1) translateY(0);
+    box-shadow: 0 4px 16px rgba(37, 211, 102, 0.3), 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+@keyframes float-pulse-contact {
+  0%, 100% {
+    transform: scale(1) translateY(0);
+    box-shadow: 0 4px 16px rgba(0, 64, 128, 0.3), 0 0 0 0 rgba(255, 90, 0, 0);
+  }
+  20% {
+    transform: scale(1.08) translateY(-1px);
+    box-shadow: 0 6px 20px rgba(0, 64, 128, 0.4), 0 0 14px 6px rgba(255, 90, 0, 0.55);
+  }
+  40% {
+    transform: scale(1) translateY(0);
+    box-shadow: 0 4px 16px rgba(0, 64, 128, 0.3), 0 0 0 0 rgba(255, 90, 0, 0);
+  }
+}
+
+.animate-pulse-whatsapp {
+  animation: float-pulse-whatsapp 4.5s cubic-bezier(0.25, 1, 0.5, 1) infinite;
+  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.animate-pulse-whatsapp:hover {
+  animation-play-state: paused;
+  transform: scale(1.12) translateY(-3px) !important;
+  box-shadow: 0 10px 24px rgba(37, 211, 102, 0.45), 0 0 16px 4px rgba(37, 211, 102, 0.25) !important;
+}
+
+.animate-pulse-whatsapp:active {
+  transform: scale(0.95) translateY(1px) !important;
+  box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3) !important;
+  transition: transform 0.08s ease;
+}
+
+.animate-pulse-contact {
+  animation: float-pulse-contact 4.5s cubic-bezier(0.25, 1, 0.5, 1) infinite;
+  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.animate-pulse-contact:hover {
+  animation-play-state: paused;
+  transform: scale(1.12) translateY(-3px) !important;
+  box-shadow: 0 10px 24px rgba(0, 64, 128, 0.45), 0 0 16px 4px rgba(255, 90, 0, 0.35) !important;
+}
+
+.animate-pulse-contact:active {
+  transform: scale(0.95) translateY(1px) !important;
+  box-shadow: 0 4px 10px rgba(0, 64, 128, 0.3) !important;
+  transition: transform 0.08s ease;
+}
+
+
 

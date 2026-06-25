@@ -245,7 +245,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
                   Get a custom quote.
                 </h3>
                 <p className="text-sm leading-7 text-secondary mb-6">
-                  Tell us your dimensions, volume requirements, and application — we'll engineer the right solution.
+                  Tell us your dimensions, volume requirements, and application — we&apos;ll engineer the right solution.
                 </p>
                 <Link
                   href="/contact"
