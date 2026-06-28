@@ -158,7 +158,7 @@ export default function ContactPage() {
                                     {/* Photo */}
                                     <div className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl">
                                         <Image
-                                            src="/images/plant1.png"
+                                            src="/images/plant1_new.jpg"
                                             alt="Manufacturing Plant 1"
                                             fill
                                             className="object-cover transition-transform duration-500 group-hover:scale-105"

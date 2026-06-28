@@ -17,25 +17,25 @@ const sectors: Sector[] = [
   {
     industry: "AUTOMOTIVE",
     slug: "automotive-industry",
-    image: "/images/banner2.jpg",
+    image: "/images/epe-sheet-stack.png",
     description: "Protective foam for spare parts, bumpers, and precision components.",
   },
   {
     industry: "ELECTRONICS",
     slug: "electronics-industry",
-    image: "/images/banner3.jpg",
+    image: "/images/bubble-wrap-texture.png",
     description: "Anti-static and shock-dampening solutions for PCBs and displays.",
   },
   {
     industry: "PHARMACEUTICAL",
     slug: "pharmaceutical-industry",
-    image: "/images/banner4.jpg",
+    image: "/images/bubble-reflective-texture.png",
     description: "Temperature-resistant and clean-room compliant barrier packaging.",
   },
   {
     industry: "INDUSTRIAL",
     slug: "industrial-industry",
-    image: "/images/banner5.jpg",
+    image: "/images/warehouse_logistics.png",
     description: "Heavy-duty foam and bubble lamination for logistics and OEM supply chains.",
   },
 ];

@@ -85,7 +85,7 @@ export default function RootLayout({
         "@type": "ContactPoint",
         telephone: "+91-8999884602",
         contactType: "general",
-        email: "info@vishwarajgroup.com",
+        email: "vishwarajppl18@gmail.com",
       },
     ],
     makesOffer: [

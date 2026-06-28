@@ -45,10 +45,6 @@
       "type": "alternate"
     },
     {
-      "email": "info@vishwarajgroup.com",
-      "type": "general_inquiry"
-    },
-    {
       "email": "sales@vishwaraj.com",
       "type": "sales"
     }
