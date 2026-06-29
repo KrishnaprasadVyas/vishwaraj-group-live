@@ -135,6 +135,7 @@ const ctaVariants = {
 export function HeroSlideshow() {
   const [current, setCurrent] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
+  const [isPaused, setIsPaused] = useState(false);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
 
   const handleNext = useCallback(() => {
@@ -149,23 +150,33 @@ export function HeroSlideshow() {
     setCurrent(index);
   }, []);
 
-  const resetTimer = useCallback(() => {
-    if (timerRef.current) {
-      clearInterval(timerRef.current);
-    }
-    if (!isHovered) {
-      timerRef.current = setInterval(() => {
-        handleNext();
-      }, 2000);
-    }
-  }, [isHovered, handleNext]);
-
+  // Log current slide index whenever state updates
   useEffect(() => {
-    resetTimer();
+    console.log(`Slide: ${current}`);
+  }, [current]);
+
+  // One stable interval not recreated on every render
+  useEffect(() => {
+    if (isHovered || isPaused) {
+      if (timerRef.current) {
+        clearInterval(timerRef.current);
+        timerRef.current = null;
+      }
+      return;
+    }
+
+    timerRef.current = setInterval(() => {
+      console.log(`Timestamp: ${new Date().toISOString()}`);
+      setCurrent((prev) => (prev + 1) % slides.length);
+    }, 2000);
+
     return () => {
-      if (timerRef.current) clearInterval(timerRef.current);
+      if (timerRef.current) {
+        clearInterval(timerRef.current);
+        timerRef.current = null;
+      }
     };
-  }, [current, isHovered, resetTimer]);
+  }, [isHovered, isPaused]);
 
   return (
     <section
@@ -204,8 +215,6 @@ export function HeroSlideshow() {
 
       {/* Main Slide Content */}
       <div 
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
         className="container-shell relative z-10 flex flex-col justify-center min-h-[75vh] w-full max-w-7xl mx-auto"
       >
         <AnimatePresence mode="wait" initial={true}>
@@ -249,7 +258,9 @@ export function HeroSlideshow() {
             {/* Call To Actions */}
             <motion.div
               variants={ctaVariants}
-              className="flex flex-col sm:flex-row gap-6"
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+              className="flex flex-col sm:flex-row gap-6 w-fit"
             >
               <Link
                 href={slides[current].ctaPrimary.href}
