@@ -58,7 +58,7 @@ export function SiteFooter() {
                 "noreply@vishwarajpolychem.com",
                 "vishwaraj99@rediffmail.com",
                 "vishwarajppl18@gmail.com",
-                "sales@vishwaraj.com"
+                "sales@vishwarajpolychem.com"
               ].map((email) => (
                 <EmailLink 
                   key={email} 

@@ -13,7 +13,7 @@
     },
     {
       "type": "associated_entity",
-  "companyName": "Shreeniwas Casttech Industries",
+      "companyName": "Shreeniwas Casttech Industries",
       "location": "Chakan, Pune, Maharashtra, India",
       "note": "Associated entity for die casting components manufacturing"
     }
@@ -45,7 +45,7 @@
       "type": "alternate"
     },
     {
-      "email": "sales@vishwaraj.com",
+      "email": "sales@vishwarajpolychem.com",
       "type": "sales"
     }
   ],
