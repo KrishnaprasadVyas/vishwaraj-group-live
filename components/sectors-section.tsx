@@ -48,7 +48,7 @@ export function SectorsSection() {
     <section className="relative overflow-hidden border-y border-border">
       {/* Dynamic photographic backdrop */}
       <div className="absolute inset-0 -z-10">
-        {sectors.map((sector, i) => (
+        {sectors.map((sector) => (
           <div
             key={sector.slug}
             className="absolute inset-0 transition-opacity duration-700 ease-in-out"
@@ -60,7 +60,6 @@ export function SectorsSection() {
               fill
               className="object-cover"
               sizes="100vw"
-              priority={i === 0}
             />
             <div className="absolute inset-0 bg-[#0A192F]/90 backdrop-blur-sm" />
           </div>

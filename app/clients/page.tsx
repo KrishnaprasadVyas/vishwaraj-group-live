@@ -4,12 +4,15 @@ import { ArrowRight, ArrowUpRight, ShieldCheck, Cog, Clock, ThumbsUp, MapPin, Aw
 
 import { Reveal } from "@/components/reveal";
 import { ClientShowcase } from "@/components/client-showcase";
+import { JsonLd } from "@/components/json-ld";
+import { breadcrumbJsonLd, createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Our Clients | Vishwaraj Polychem",
+export const metadata: Metadata = createPageMetadata({
+  title: "Clients & Industries We Support",
   description:
-    "Vishwaraj Polychem has been serving leading industries since 1999 with trusted protective packaging solutions. Explore our client showcase.",
-};
+    "See the industries and organizations supported by Vishwaraj Polychem with reliable protective packaging and industrial foam solutions since 1999.",
+  path: "/clients",
+});
 
 const industries = [
   { name: "Automotive", icon: Car, desc: "Specialized foam dunnage & component protection." },
@@ -25,6 +28,13 @@ export default function ClientsPage() {
 
   return (
     <div className="relative min-h-screen bg-[#F8F9FA]">
+      <JsonLd
+        id="clients-breadcrumb-schema"
+        data={breadcrumbJsonLd([
+          { name: "Home", path: "/" },
+          { name: "Clients", path: "/clients" },
+        ])}
+      />
       {/* ── Compact Hero ─────────────────────────────────────────────── */}
       <section className="relative overflow-hidden bg-primary pt-[96px] pb-10 px-6 lg:px-12 border-b border-white/10 flex items-center min-h-[250px]">
         <div className="absolute inset-0 z-0">

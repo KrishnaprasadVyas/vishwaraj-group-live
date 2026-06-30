@@ -7,18 +7,28 @@ import { Reveal } from "@/components/reveal";
 import { WhyChooseUs } from "@/components/why-choose-us";
 import { IndustriesPreview } from "@/components/industries-preview";
 import { StatisticsGrid } from "@/components/statistics-grid";
+import { JsonLd } from "@/components/json-ld";
+import { breadcrumbJsonLd, createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "About Us | Vishwaraj Polychem",
+export const metadata: Metadata = createPageMetadata({
+  title: "About Our Protective Packaging Company",
   description:
-    "Established in 1999, Vishwaraj Polychem is a premier manufacturer of protective packaging materials based in Pune, delivering engineering excellence.",
-};
+    "Learn about Vishwaraj Polychem, a Pune protective packaging and industrial foam manufacturer delivering engineered solutions since 1999.",
+  path: "/about",
+});
 
 // Industries data moved to components/industries-preview.tsx
 
 export default function AboutPage() {
   return (
     <div className="relative min-h-screen bg-[#F8F9FA]">
+      <JsonLd
+        id="about-breadcrumb-schema"
+        data={breadcrumbJsonLd([
+          { name: "Home", path: "/" },
+          { name: "About", path: "/about" },
+        ])}
+      />
       
       {/* ── 1. Compact Hero ─────────────────────────────────────────────── */}
       <section className="relative overflow-hidden bg-primary pt-[96px] pb-10 px-6 lg:px-12 border-b border-white/10 flex items-center min-h-[300px]">
@@ -143,7 +153,7 @@ export default function AboutPage() {
                     <ShieldCheck className="w-5 h-5 text-accent" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-primary">Quality Raw Materials</h4>
+                    <h3 className="font-bold text-primary">Quality Raw Materials</h3>
                     <p className="text-sm text-secondary mt-1">Sourcing superior polymers to ensure absolute consistency.</p>
                   </div>
                 </li>
@@ -152,7 +162,7 @@ export default function AboutPage() {
                     <Wrench className="w-5 h-5 text-accent" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-primary">Precision Engineering</h4>
+                    <h3 className="font-bold text-primary">Precision Engineering</h3>
                     <p className="text-sm text-secondary mt-1">Advanced die-cutting and laminating techniques.</p>
                   </div>
                 </li>
@@ -161,7 +171,7 @@ export default function AboutPage() {
                     <Factory className="w-5 h-5 text-accent" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-primary">Modern Infrastructure</h4>
+                    <h3 className="font-bold text-primary">Modern Infrastructure</h3>
                     <p className="text-sm text-secondary mt-1">High-capacity extrusion lines and conversion centers.</p>
                   </div>
                 </li>

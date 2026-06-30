@@ -6,7 +6,9 @@ import Image from "next/image";
 import { ArrowLeft, ArrowRight, BadgeInfo, Package2, Sparkles, ChevronRight, ArrowUpRight } from "lucide-react";
 
 import { Reveal } from "@/components/reveal";
+import { JsonLd } from "@/components/json-ld";
 import { allProducts, getProductBySlug, productGroups, summarizeText, getProductImage } from "@/lib/content";
+import { absoluteUrl, breadcrumbJsonLd, createPageMetadata, SITE_URL } from "@/lib/seo";
 
 type ProductPageProps = {
   params: Promise<{ slug: string }>;
@@ -42,17 +44,13 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
     return {};
   }
 
-  return {
-    title: product.name,
+  return createPageMetadata({
+    title: `${product.name} — ${product.categoryName}`,
     description: summarizeText(product.description, 160),
-    alternates: { canonical: `/products/${product.slug}` },
-    openGraph: {
-      title: product.name,
-      description: summarizeText(product.description, 160),
-      url: `/products/${product.slug}`,
-      images: ["/og-image.svg"],
-    },
-  };
+    path: `/products/${product.slug}`,
+    image: getProductImage(product.slug, product.categorySlug),
+    keywords: [product.name, product.categoryName, "protective packaging manufacturer"],
+  });
 }
 
 export default async function ProductPage({ params }: ProductPageProps) {
@@ -64,6 +62,20 @@ export default async function ProductPage({ params }: ProductPageProps) {
   }
 
   const productImage = getProductImage(product.slug, product.categorySlug);
+  const productPath = `/products/${product.slug}`;
+  const productJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "@id": `${absoluteUrl(productPath)}#product`,
+    name: product.name,
+    description: product.description,
+    image: [absoluteUrl(productImage)],
+    category: product.categoryName,
+    sku: product.slug,
+    brand: { "@type": "Brand", name: "Vishwaraj Polychem" },
+    manufacturer: { "@id": `${SITE_URL}/#organization` },
+    url: absoluteUrl(productPath),
+  };
 
   // Find related products from same category
   const categoryGroup = productGroups.find((g) => g.slug === product.categorySlug);
@@ -87,6 +99,15 @@ export default async function ProductPage({ params }: ProductPageProps) {
 
   return (
     <div className="relative min-h-screen">
+      <JsonLd id={`product-${product.slug}-schema`} data={productJsonLd} />
+      <JsonLd
+        id={`product-${product.slug}-breadcrumb-schema`}
+        data={breadcrumbJsonLd([
+          { name: "Home", path: "/" },
+          { name: "Products", path: "/products" },
+          { name: product.name, path: productPath },
+        ])}
+      />
       {/* ── Breadcrumb + Hero ──────────────────────────────────── */}
       <section className="relative overflow-hidden bg-[#F8F9FA] pt-32 pb-0 px-6 lg:px-12 border-b border-border">
         <div className="mx-auto max-w-7xl">

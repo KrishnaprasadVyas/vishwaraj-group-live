@@ -71,7 +71,7 @@ export function SiteHeader() {
           </div>
 
           {/* Center: Navigation Links */}
-          <nav className="hidden lg:flex items-center gap-8 h-full">
+          <nav aria-label="Primary navigation" className="hidden lg:flex items-center gap-8 h-full">
             {navLinks.map((link) => {
               const isActive = pathname === link.href || (link.href !== '/' && pathname.startsWith(link.href));
               
@@ -79,6 +79,7 @@ export function SiteHeader() {
                 <Link
                   key={link.href}
                   href={link.href}
+                  aria-current={isActive ? "page" : undefined}
                   className={`relative flex items-center h-full text-[14px] font-semibold transition-colors duration-200 group ${
                     isActive ? "text-[#004080]" : "text-[#4B5563] hover:text-[#004080]"
                   }`}
@@ -112,6 +113,8 @@ export function SiteHeader() {
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
               aria-label={mobileOpen ? "Close menu" : "Open menu"}
+              aria-expanded={mobileOpen}
+              aria-controls="mobile-navigation"
               className="flex items-center justify-center p-2 text-slate-700 hover:text-[#004080] transition-colors lg:hidden ml-4"
             >
               {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -122,6 +125,8 @@ export function SiteHeader() {
 
       {/* Mobile nav panel */}
       <div
+        id="mobile-navigation"
+        aria-hidden={!mobileOpen}
         className={`fixed inset-0 z-40 bg-white lg:hidden transition-transform duration-300 pt-[70px] ${
           mobileOpen ? "translate-x-0" : "translate-x-full"
         }`}
@@ -134,6 +139,7 @@ export function SiteHeader() {
                 <Link
                   key={link.href}
                   href={link.href}
+                  aria-current={isActive ? "page" : undefined}
                   className={`text-[16px] font-semibold py-3 border-b border-gray-100 ${
                     isActive ? "text-[#004080]" : "text-[#4B5563]"
                   }`}

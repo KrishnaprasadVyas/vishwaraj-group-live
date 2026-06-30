@@ -135,7 +135,7 @@ const ctaVariants = {
 export function HeroSlideshow() {
   const [current, setCurrent] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
-  const [isPaused, setIsPaused] = useState(false);
+  const isPaused = false;
   const timerRef = useRef<NodeJS.Timeout | null>(null);
 
   const handleNext = useCallback(() => {

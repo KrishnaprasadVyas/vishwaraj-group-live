@@ -5,13 +5,16 @@ import { Mail, MapPinned, Phone, Clock, ArrowUpRight } from "lucide-react";
 import { ContactForm } from "@/components/contact-form";
 import { Reveal } from "@/components/reveal";
 import { EmailLink } from "@/components/email-link";
+import { JsonLd } from "@/components/json-ld";
 import { cleanContactDetails } from "@/lib/content";
+import { breadcrumbJsonLd, createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-    title: "Contact Us",
+export const metadata: Metadata = createPageMetadata({
+    title: "Contact Our Packaging Manufacturing Team",
     description:
-        "Contact Vishwaraj Polychem Private Limited for protective packaging and EPE foam manufacturing inquiries. Located at Talawade MIDC, Pune, Maharashtra.",
-};
+        "Contact Vishwaraj Polychem in Pune for EPE foam, protective packaging, product specifications and custom manufacturing quotes.",
+    path: "/contact",
+});
 
 export default function ContactPage() {
     const address = cleanContactDetails.addresses[0];
@@ -20,6 +23,13 @@ export default function ContactPage() {
 
     return (
         <div className="relative min-h-screen">
+            <JsonLd
+                id="contact-breadcrumb-schema"
+                data={breadcrumbJsonLd([
+                    { name: "Home", path: "/" },
+                    { name: "Contact", path: "/contact" },
+                ])}
+            />
             {/* ── Hero ─────────────────────────────────────────────── */}
             <section className="relative overflow-hidden bg-primary pt-[96px] pb-10 px-6 lg:px-12 border-b border-white/10 flex items-center min-h-[300px]">
                 <div className="absolute inset-0 z-0">
@@ -159,11 +169,10 @@ export default function ContactPage() {
                                     <div className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl">
                                         <Image
                                             src="/images/plant1_new.jpg"
-                                            alt="Manufacturing Plant 1"
+                                            alt="Vishwaraj Polychem manufacturing plant in Talwade, Pune"
                                             fill
                                             className="object-cover transition-transform duration-500 group-hover:scale-105"
                                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
-                                            priority
                                         />
                                     </div>
 
@@ -216,11 +225,10 @@ export default function ContactPage() {
                                     <div className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl">
                                         <Image
                                             src="/images/plant2.png"
-                                            alt="Manufacturing Plant 2"
+                                            alt="Vishwaraj Polychem manufacturing plant in Yelwadi, Pune"
                                             fill
                                             className="object-cover transition-transform duration-500 group-hover:scale-105"
                                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
-                                            priority
                                         />
                                     </div>
 

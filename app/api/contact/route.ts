@@ -1,7 +1,7 @@
 /**
  * RESEND SETUP REQUIRED:
  * 1. Create account at resend.com
- * 2. Add & verify domain vishwarajgroup.com at resend.com/domains
+ * 2. Add & verify domain vishwarajpolychem.com at resend.com/domains
  * 3. Create API key at resend.com/api-keys
  * 4. Copy .env.local.example to .env.local and fill in the values
  * 5. Set same env vars in your deployment platform (Vercel/etc)

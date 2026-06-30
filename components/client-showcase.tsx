@@ -28,7 +28,7 @@ export function ClientShowcase({ preview = false }: { preview?: boolean }) {
                 <div className="relative w-full h-full max-h-[80px] max-w-[140px] flex items-center justify-center">
                   <Image
                     src={`/images/clients/${i}.png`}
-                    alt={`Client logo ${i}`}
+                    alt={`Vishwaraj Polychem client logo ${i}`}
                     fill
                     className="object-contain"
                     sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"

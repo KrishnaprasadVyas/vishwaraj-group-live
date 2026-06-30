@@ -4,17 +4,27 @@ import Link from "next/link";
 import { ArrowUpRight, Factory, Package, ChevronRight, ArrowRight } from "lucide-react";
 
 import { Reveal } from "@/components/reveal";
+import { JsonLd } from "@/components/json-ld";
 import { industries } from "@/lib/content";
+import { breadcrumbJsonLd, createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Industries Served",
+export const metadata: Metadata = createPageMetadata({
+  title: "Industries We Serve with Protective Packaging",
   description:
-    "Vishwaraj Polychem supplies protective packaging materials to automotive, electronics, pharmaceutical, FMCG, industrial, and logistics sectors across India.",
-};
+    "Protective packaging solutions for automotive, electronics, pharmaceutical, FMCG, industrial and logistics businesses across India.",
+  path: "/industries",
+});
 
 export default function IndustriesPage() {
   return (
     <div className="relative min-h-screen">
+      <JsonLd
+        id="industries-breadcrumb-schema"
+        data={breadcrumbJsonLd([
+          { name: "Home", path: "/" },
+          { name: "Industries", path: "/industries" },
+        ])}
+      />
       {/* ── Hero ─────────────────────────────────────────────── */}
       <section className="relative overflow-hidden bg-primary pt-[96px] pb-10 px-6 lg:px-12 border-b border-white/10 flex items-center min-h-[300px]">
         <div className="absolute inset-0 z-0">

@@ -8,12 +8,15 @@ import { IndustriesPreview } from "@/components/industries-preview";
 import { WhyChooseUs } from "@/components/why-choose-us";
 import { ClientShowcase } from "@/components/client-showcase";
 import { HeroSlideshow } from "@/components/hero-slideshow";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  title: "Vishwaraj Polychem | Enterprise Protective Packaging",
+export const metadata = createPageMetadata({
+  title: "Protective Packaging & Industrial Foam Manufacturer",
   description:
-    "Premium protective packaging materials and precision foam conversion solutions for global manufacturing, automotive, electronics, and industrial supply chains.",
-};
+    "Vishwaraj Polychem manufactures EPE foam, bubble film, stretch film and custom protective packaging for automotive, electronics and industrial supply chains.",
+  path: "/",
+  keywords: ["protective packaging manufacturer", "EPE foam manufacturer Pune", "industrial foam packaging"],
+});
 
 export default function Home() {
   return (

@@ -5,18 +5,28 @@ import Image from "next/image";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 
 import { Reveal } from "@/components/reveal";
+import { JsonLd } from "@/components/json-ld";
 import { productGroups, summarizeText, getProductImage, allProducts } from "@/lib/content";
+import { breadcrumbJsonLd, createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Products — Protective Packaging & Foam Solutions",
+export const metadata: Metadata = createPageMetadata({
+  title: "Protective Packaging & Industrial Foam Products",
   description:
-    "Browse Vishwaraj Polychem's complete range of protective packaging materials — EPE foam, air bubble film, laminated bags, stretch film, and industrial chemicals.",
-};
+    "Explore EPE foam, air bubble film, laminated bags, stretch film, rubber foam and industrial packaging products manufactured by Vishwaraj Polychem.",
+  path: "/products",
+});
 
 export default function ProductsPage() {
 
   return (
     <div className="relative min-h-screen">
+      <JsonLd
+        id="products-breadcrumb-schema"
+        data={breadcrumbJsonLd([
+          { name: "Home", path: "/" },
+          { name: "Products", path: "/products" },
+        ])}
+      />
       {/* ── Hero ─────────────────────────────────────────────── */}
       <section className="relative overflow-hidden bg-primary pt-[96px] pb-10 px-6 lg:px-12 border-b border-white/10 flex items-center min-h-[300px]">
         <div className="absolute inset-0 z-0">

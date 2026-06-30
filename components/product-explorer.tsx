@@ -122,7 +122,6 @@ export function ProductExplorer() {
                     fill
                     className="object-cover transition-transform duration-1000 group-hover:scale-105"
                     sizes="(min-width: 1024px) 75vw, 100vw"
-                    priority
                   />
 
                   {/* Cinematic Overlay */}
